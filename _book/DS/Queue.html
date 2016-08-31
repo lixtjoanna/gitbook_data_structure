@@ -1,0 +1,457 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Queue · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Tree.html" />
+    
+    
+    <link rel="prev" href="Stack.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Array.html">
+            
+                <a href="Array.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="List.html">
+            
+                <a href="List.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Stack.html">
+            
+                <a href="Stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.4" data-path="Queue.html">
+            
+                <a href="Queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="Tree.html">
+            
+                <a href="Tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="Heap.html">
+            
+                <a href="Heap.html">
+            
+                    
+                    Heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="Map.html">
+            
+                <a href="Map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="Set.html">
+            
+                <a href="Set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="SearchSort.html">
+            
+                <a href="SearchSort.html">
+            
+                    
+                    Search and Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Queue</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="queue">Queue</h1><h2 id="&#x95EE;&#x9898;&#x548C;&#x539F;&#x7406;">&#x95EE;&#x9898;&#x548C;&#x539F;&#x7406;</h2><p>&#x4E0A;&#x6B21;&#x6211;&#x4EEC;&#x4ECB;&#x7ECD;&#x4E86;&#x5982;&#x4F55;&#x5904;&#x7406;LIFO&#xFF0C;&#x4E5F;&#x5C31;&#x662F;Last in First Out&#x7684;&#x95EE;&#x9898;&#x3002;
+&#x8FD8;&#x6709;&#x4E00;&#x79CD;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#x7684;&#x60C5;&#x5F62;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x719F;&#x6089;&#x7684;&#x6392;&#x961F;&#x3002;&#x6211;&#x4EEC;&#x8FDB;&#x5165;&#x4E00;&#x4E2A;&#x961F;&#x5217;&#xFF0C;&#x7B49;&#x5F85;&#x6392;&#x5230;&#x6211;&#x4EEC;&#xFF0C;&#x6BCF;&#x6B21;&#x6392;&#x5230;&#x7684;&#x90FD;&#x662F;&#x961F;&#x5217;&#x91CC;&#x6700;&#x65E9;&#x6765;&#x7684;&#x4EBA;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;FIFO&#xFF0C;First in First Out&#x3002;
+<img src="http://cs.lmu.edu/~ray/images/queues.png">
+&#x8FD9;&#x79CD;&#x529F;&#x80FD;&#xFF0C;&#x5E94;&#x8BE5;&#x5982;&#x4F55;&#x5B9E;&#x73B0;&#x5462;&#xFF1F;&#x4F60;&#x4E5F;&#x8BB8;&#x4F1A;&#x731C;&#x5230;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;Stack&#xFF0C;&#x7528;Array&#x3001;ArrayList&#x3001;LinkedList&#x4E5F;&#x4E00;&#x6837;&#x90FD;&#x80FD;&#x5B9E;&#x73B0;&#xFF0C;&#x4F46;&#x4E5F;&#x90FD;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#x3002;&#x540C;&#x6837;&#x7C7B;&#x4F3C;&#x4E8E;Stack&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x8BBE;&#x8BA1;&#x4E00;&#x79CD;&#x76F4;&#x63A5;&#x5B9E;&#x73B0;FIFO&#x529F;&#x80FD;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x961F;&#x5217;Queue&#x3002;</p><h2 id="&#x529F;&#x80FD;&#x3001;&#x65B9;&#x6CD5;&#x53CA;&#x590D;&#x6742;&#x5EA6;">&#x529F;&#x80FD;&#x3001;&#x65B9;&#x6CD5;&#x53CA;&#x590D;&#x6742;&#x5EA6;</h2><ol><li><p>Queue&#x5B9E;&#x73B0;&#x4EE5;&#x4E0B;&#x529F;&#x80FD;&#xFF1A;</p><ul><li>enqueue(x): add an item at the tail
+</li>
+<li>dequeue: remove the item at the head
+</li>
+<li>peek: return the item at the head (without removing it)
+</li>
+<li>size: return the number of items in the queue
+</li>
+<li>isEmpty: return whether the queue has no items
+</li></ul>
+<table>
+<thead>
+<tr><th>DS</th>
+<th>Enqueue</th>
+<th>Dequeue</th>
+<th>Peek</th>
+<th>size</th>
+<th>isEmpty</th>
+</tr></thead><tbody>
+<tr><td style="text-align:left">Queue</td>
+<td style="text-align:left">O(1)</td>
+<td style="text-align:center">O(1)</td>
+<td style="text-align:right">O(1)</td>
+<td style="text-align:right">O(1)</td>
+<td style="text-align:right">O(1)</td>
+</tr></tbody></table>
+
+</li>
+<li><p>&#x5BF9;&#x5E94;&#x7684;Java&#x65B9;&#x6CD5;&#xFF1A;Java&#x91CC;&#x6CA1;&#x6709;Queue class&#xFF0C;&#x800C;&#x662F;&#x7528;LinkedList&#x6765;implement Queue interface&#x3002;&#x65B9;&#x6CD5;&#x4E3B;&#x8981;&#x662F;poll()&#x548C;offer()&#x3002;</p><p><a href="http://tutorialspointexamples.com/queue-interface-in-java/" target="_blank">http://tutorialspointexamples.com/queue-interface-in-java/</a></p><ul><li><p>add(Object obj): Inserts the specified element into this queue. Returns true if queue changed after the operation otherwise returns false.</p></li>
+<li><p>offer(Object obj): Inserts the specified element into this queue. Returns true if the element was added to this queue otherwise returns false.</p></li>
+<li><p>remove(): Returns and removes the head of this queue. It throws an exception if this queue is empty.</p></li>
+<li><p>poll(): Returns and removes the head of this queue. Returns null if this queue is empty.</p></li>
+<li><p>element(): Returns but does not removes the head of this queue. It throws an exception if this queue is empty.</p></li>
+<li><p>peek(): Returns but does not removes the head of this queue. Returns null if this queue is empty.</p><p>&#x200B;</p></li></ul>
+</li></ol>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2><ol><li><p>LinkedList
+&#x7528;LinkedList&#x5B9E;&#x73B0;Queue&#xFF0C;&#x548C;&#x5B9E;&#x73B0;Stack&#x7C7B;&#x4F3C;&#xFF0C;&#x4F46;&#x66F4;&#x590D;&#x6742;&#x4E00;&#x4E9B;&#xFF0C;&#x56E0;&#x4E3A;Stack&#x662F;&#x5728;&#x540C;&#x4E00;&#x5934;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;LinkedList&#x4E0D;&#x662F;&#x3002;
+&#x5982;&#x679C;&#x6211;&#x4EEC;&#x628A;&#x6392;&#x961F;&#x64CD;&#x4F5C;&#x653E;&#x5728;list&#x5C3E;&#x90E8;&#xFF0C;&#x6392;&#x5230;&#x4E86;&#x5C31;&#x4ECE;&#x5934;&#x90E8;&#x5220;&#x9664;&#xFF0C;&#x90A3;&#x4E48;&#x8981;enqueue&#x5C31;&#x5F97;&#x5148;traverse&#x5230;&#x5C3E;&#x90E8;&#xFF0C;&#x65F6;&#x95F4;O(N)&#xFF0C;&#x6CA1;&#x6548;&#x7387;&#x3002;
+&#x5982;&#x4F55;&#x6539;&#x8FDB;&#x5462;&#xFF1F;&#x4FDD;&#x6301;&#x4E00;&#x4E2A;&#x5230;&#x5C3E;&#x90E8;&#x7684;Node&#xFF1A;rear&#x5373;&#x53EF;&#x3002;&#x6BCF;&#x6B21;enqueue&#xFF0C;&#x7528;rear.next&#x628A;newNode&#x8FDE;&#x4E0A;&#xFF0C;&#x7136;&#x540E;rear = newNode&#x3002;dequeue&#x76F4;&#x63A5;&#x5F39;head&#x7684;data&#xFF0C;&#x7136;&#x540E;head = head.next&#x3002;</p></li>
+<li><p>Array</p><p>&#x7528;Array&#x5B9E;&#x73B0;Queue&#xFF0C;&#x5C31;&#x590D;&#x6742;&#x4E00;&#x4E9B;&#x4E86;&#x3002;&#x6211;&#x4EEC;&#x7528;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x7EF4;&#x62A4;&#x5934;&#x5C3E;&#x4E24;&#x4E2A;&#x4F4D;&#x7F6E;&#x3002;&#x6DFB;&#x52A0;&#x5728;&#x5C3E;&#x7AEF;&#xFF0C;&#x63D0;&#x53D6;&#x5728;&#x5934;&#x7AEF;&#xFF0C;&#x5FAA;&#x73AF;&#x6D41;&#x52A8;&#x3002;&#x800C;&#x5934;&#x7AEF;&#x548C;&#x5C3E;&#x7AEF;&#x76F8;&#x78B0;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x9700;&#x8981;resize&#xFF0C;&#x4ECE;&#x5934;&#x5230;&#x5C3E;&#x590D;&#x5236;&#x5230;&#x65B0;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x5C06;&#x539F;&#x6765;&#x7684;&#x7A7A;&#x95F4;&#x820D;&#x5F03;&#x3002;</p><p>Things to note here:</p><pre><code>- The capacity is set at creation time
+- Adds have a precondition that the queue isn&apos;t already full
+- Adding to a full queue is a state exception, not an argument exception
+- The array itself is effectively circular
+- When removing, we take care to nullify the newly unused slot in the array to prevent a possible memory leak</code></pre>
+<p>&#x8FD9;&#x91CC;&#x6700;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x5C31;&#x662F;&#x5FAA;&#x73AF;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x3010;index = tail % arr. length&#x3011;&#xFF1F;</p></li>
+<li><p>Stack</p><p>LeetCode: Implement Queue Using Stacks</p><p>&#x7528;&#x4E24;&#x4E2A;stack&#xFF0C;push&#x7684;&#x65F6;&#x5019;&#x8FDB;&#x5165;&#x7B2C;&#x4E00;&#x4E2A;&#xFF0C;pop&#x7684;&#x65F6;&#x5019;&#x5219;&#x628A;&#x6240;&#x6709;&#x7B2C;&#x4E00;&#x4E2A;&#x91CC;&#x9762;&#x7684;&#x5143;&#x7D20;pop&#x5230;&#x7B2C;&#x4E8C;&#x4E2A;&#xFF0C;&#x987A;&#x5E8F;&#x5C31;&#x53CD;&#x8FC7;&#x6765;&#x4E86;&#xFF0C;&#x7136;&#x540E;pop&#x6389;&#x7B2C;&#x4E8C;&#x4E2A;stack&#x5934;&#x90E8;&#x5143;&#x7D20;&#x5373;&#x53EF;&#x3002;</p><p><a href="http://www.jiuzhang.com/solutions/implement-queue-by-two-stacks/" target="_blank">http://www.jiuzhang.com/solutions/implement-queue-by-two-stacks/</a></p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Queue</span> </span>{
+    <span class="hljs-keyword">private</span> Stack&lt;Integer&gt; stack1;
+    <span class="hljs-keyword">private</span> Stack&lt;Integer&gt; stack2;
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-title">Queue</span><span class="hljs-params">()</span> </span>{
+       stack1 = <span class="hljs-keyword">new</span> Stack&lt;Integer&gt;();
+       stack2 = <span class="hljs-keyword">new</span> Stack&lt;Integer&gt;();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">private</span> <span class="hljs-keyword">void</span> <span class="hljs-title">stack2ToStack1</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">while</span> (!stack2.empty()) {
+            stack1.push(stack2.pop());
+        }
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">push</span><span class="hljs-params">(<span class="hljs-keyword">int</span> number)</span> </span>{
+        stack2.push(number);
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">pop</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (stack1.empty() == <span class="hljs-keyword">true</span>) {
+            <span class="hljs-keyword">this</span>.stack2ToStack1();
+        }
+        <span class="hljs-keyword">return</span> stack1.pop();
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">top</span><span class="hljs-params">()</span> </span>{
+        <span class="hljs-keyword">if</span> (stack1.empty() == <span class="hljs-keyword">true</span>) {
+            <span class="hljs-keyword">this</span>.stack2ToStack1();
+        }
+        <span class="hljs-keyword">return</span> stack1.peek();
+    }
+}</code></pre>
+<p>&#x200B;</p></li></ol>
+<h2 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h2><ol><li>Queue&#x4E0D;&#x662F;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;&#x3002;Java&#x4E2D;&#x7EBF;&#x7A0B;&#x5B89;&#x5168;&#x7684;Queue&#x662F;Blocking Queue&#x3002;
+<a href="http://www.infoq.com/cn/articles/java-blocking-queue/" target="_blank">Blocking Queue</a>
+&#x963B;&#x585E;&#x961F;&#x5217;&#xFF08;BlockingQueue&#xFF09;&#x662F;&#x4E00;&#x4E2A;&#x652F;&#x6301;&#x4E24;&#x4E2A;&#x9644;&#x52A0;&#x64CD;&#x4F5C;&#x7684;&#x961F;&#x5217;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x9644;&#x52A0;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#xFF1A;&#x5728;&#x961F;&#x5217;&#x4E3A;&#x7A7A;&#x65F6;&#xFF0C;&#x83B7;&#x53D6;&#x5143;&#x7D20;&#x7684;&#x7EBF;&#x7A0B;&#x4F1A;&#x7B49;&#x5F85;&#x961F;&#x5217;&#x53D8;&#x4E3A;&#x975E;&#x7A7A;&#x3002;&#x5F53;&#x961F;&#x5217;&#x6EE1;&#x65F6;&#xFF0C;&#x5B58;&#x50A8;&#x5143;&#x7D20;&#x7684;&#x7EBF;&#x7A0B;&#x4F1A;&#x7B49;&#x5F85;&#x961F;&#x5217;&#x53EF;&#x7528;&#x3002;&#x963B;&#x585E;&#x961F;&#x5217;&#x5E38;&#x7528;&#x4E8E;&#x751F;&#x4EA7;&#x8005;&#x548C;&#x6D88;&#x8D39;&#x8005;&#x7684;&#x573A;&#x666F;&#xFF0C;&#x751F;&#x4EA7;&#x8005;&#x662F;&#x5F80;&#x961F;&#x5217;&#x91CC;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x6D88;&#x8D39;&#x8005;&#x662F;&#x4ECE;&#x961F;&#x5217;&#x91CC;&#x62FF;&#x5143;&#x7D20;&#x7684;&#x7EBF;&#x7A0B;&#x3002;&#x963B;&#x585E;&#x961F;&#x5217;&#x5C31;&#x662F;&#x751F;&#x4EA7;&#x8005;&#x5B58;&#x653E;&#x5143;&#x7D20;&#x7684;&#x5BB9;&#x5668;&#xFF0C;&#x800C;&#x6D88;&#x8D39;&#x8005;&#x4E5F;&#x53EA;&#x4ECE;&#x5BB9;&#x5668;&#x91CC;&#x62FF;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x4E24;&#x4E2A;&#x65B9;&#x6CD5;&#x5206;&#x522B;&#x662F;put()&#x548C;take()&#x3002;
+</li>
+<li><p>ArrayDeque
+Queue&#x662F;Java&#x91CC;&#x7684;&#x4E00;&#x4E2A;Interface&#xFF0C;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;Deque Interface&#xFF0C;&#x4E0E;&#x4E4B;&#x7C7B;&#x4F3C;&#x3002;Deque&#x7B80;&#x800C;&#x8A00;&#x4E4B;&#x5C31;&#x662F;Stack&#x548C;Queue&#x7684;&#x7ED3;&#x5408;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5B83;&#x5728;&#x7EBF;&#x6027;&#x7ED3;&#x6784;&#x7684;&#x5934;&#x5C3E;&#x4E24;&#x7AEF;&#x81EA;&#x7531;&#x5730;&#x5B58;&#x53D6;&#x5143;&#x7D20;&#x3002;
+<a href="https://docs.oracle.com/javase/tutorial/collections/interfaces/deque.html" target="_blank">Deque Interface</a></p><p>&#x800C;ArrayDeque&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;Dequeue Interface&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;&#x5B83;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x7279;&#x70B9;&#xFF1A;</p><ul><li>Array deques have no capacity restrictions so they grow as necessary to support usage.
+</li>
+<li>They are not thread-safe; in the absence of external synchronization.
+</li>
+<li>They do not support concurrent access by multiple threads.
+</li>
+<li>Null elements are prohibited in the array deques.
+</li>
+<li>They are faster than Stack and LinkedList.
+</li></ul>
+<p>&#x666E;&#x901A;&#x6570;&#x7EC4;&#x53EA;&#x80FD;&#x5FEB;&#x901F;&#x5728;&#x672B;&#x5C3E;&#x6DFB;&#x52A0;&#x5143;&#x7D20;&#xFF0C;&#x4E3A;&#x4E86;&#x652F;&#x6301;FIFO&#xFF0C;&#x4ECE;&#x6570;&#x7EC4;&#x5934;&#x5FEB;&#x901F;&#x53D6;&#x51FA;&#x5143;&#x7D20;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5FAA;&#x73AF;&#x6570;&#x7EC4;&#xFF1A;&#x6709;&#x961F;&#x5934;&#x961F;&#x5C3E;&#x4E24;&#x4E2A;&#x4E0B;&#x6807;&#xFF1A;&#x5F39;&#x51FA;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x961F;&#x5934;&#x4E0B;&#x6807;&#x9012;&#x589E;&#xFF1B;&#x52A0;&#x5165;&#x5143;&#x7D20;&#x65F6;&#xFF0C;&#x5982;&#x679C;&#x5DF2;&#x5230;&#x6570;&#x7EC4;&#x7A7A;&#x95F4;&#x7684;&#x672B;&#x5C3E;&#xFF0C;&#x5219;&#x5C06;&#x5143;&#x7D20;&#x5FAA;&#x73AF;&#x8D4B;&#x503C;&#x5230;&#x6570;&#x7EC4;0&#xFF0C;&#x540C;&#x65F6;&#x961F;&#x5C3E;&#x4E0B;&#x6807;&#x6307;&#x5411;0&#xFF0C;&#x518D;&#x63D2;&#x5165;&#x4E0B;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5219;&#x8D4B;&#x503C;&#x5230;&#x6570;&#x7EC4;[1]&#xFF0C;&#x961F;&#x5C3E;&#x4E0B;&#x6807;&#x6307;&#x5411;1&#x3002;&#x5982;&#x679C;&#x961F;&#x5C3E;&#x7684;&#x4E0B;&#x6807;&#x8FFD;&#x4E0A;&#x961F;&#x5934;&#xFF0C;&#x8BF4;&#x660E;&#x6570;&#x7EC4;&#x6240;&#x6709;&#x7A7A;&#x95F4;&#x5DF2;&#x7528;&#x5B8C;&#xFF0C;&#x8FDB;&#x884C;&#x53CC;&#x500D;&#x7684;&#x6570;&#x7EC4;&#x6269;&#x5BB9;&#x3002;</p></li></ol>
+<h2 id="&#x5E94;&#x7528;">&#x5E94;&#x7528;</h2><ol><li>BFS&#x91CC;&#x4F1A;&#x7528;&#x5230;queue&#xFF0C;&#x800C;&#x5B83;&#x5177;&#x5907;&#x9010;&#x5C42;&#x8BB0;&#x5F55;&#x6027;&#x8D28;&#xFF08;&#x53C2;&#x89C1;102Binary Tree Level Order Traversal&#xFF09;&#x3002;
+</li></ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Stack.html" class="navigation navigation-prev " aria-label="Previous page: Stack">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Tree.html" class="navigation navigation-next " aria-label="Next page: Tree">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Queue","level":"1.1.4","depth":2,"next":{"title":"Tree","level":"1.1.5","depth":2,"path":"DS/Tree.md","ref":"DS/Tree.md","articles":[]},"previous":{"title":"Stack","level":"1.1.3","depth":2,"path":"DS/Stack.md","ref":"DS/Stack.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DS/Queue.md","mtime":"2016-08-31T18:58:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T19:03:23.685Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

@@ -1,0 +1,483 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Arrays · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="List.html" />
+    
+    
+    <link rel="prev" href="../" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1.1" data-path="Array.html">
+            
+                <a href="Array.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="List.html">
+            
+                <a href="List.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Stack.html">
+            
+                <a href="Stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="Queue.html">
+            
+                <a href="Queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="Tree.html">
+            
+                <a href="Tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="Heap.html">
+            
+                <a href="Heap.html">
+            
+                    
+                    Heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="Map.html">
+            
+                <a href="Map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="Set.html">
+            
+                <a href="Set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="SearchSort.html">
+            
+                <a href="SearchSort.html">
+            
+                    
+                    Search and Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Arrays</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="array">ARRAY</h1><h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2><p>&#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x9053;&#x9898;&#x76EE;&#xFF1A;&#x5982;&#x4F55;&#x6309;&#x4E8B;&#x5148;&#x6307;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x50A8;&#x5B58;&#x5E76;&#x6253;&#x5370;10&#x4E2A;&#x6570;&#xFF1F;
+&#x6BD4;&#x5982;&#x8BF4;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x8BA1;&#x7B97;&#x673A;&#x6253;&#x5370;&#x51FA;&#x4EE5;&#x4E0B;&#x5341;&#x4E2A;&#x6570;&#x5B57;&#xFF1A;0-9&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x8FD9;&#x5341;&#x4E2A;&#x6570;&#x9700;&#x8981;&#x5148;&#x88AB;&#x50A8;&#x5B58;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x6253;&#x5370;&#x51FA;&#x6765;&#x3002;
+&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x79CD;&#x50A8;&#x5B58;&#x7ED3;&#x6784;&#xFF0C;&#x5B83;&#x80FD;&#x591F;&#x6309;&#x7167;&#x6211;&#x4EEC;&#x6307;&#x5B9A;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x50A8;&#x5B58;&#x548C;&#x7BA1;&#x7406;&#x4E00;&#x5B9A;&#x91CF;&#x7684;&#x6570;&#x636E;&#x3002;&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x628A;&#x8FD9;&#x4E2A;&#x7ED3;&#x6784;&#x91CC;&#x7684;&#x6570;&#x636E;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x8FDB;&#x884C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6BD4;&#x5982;&#x6253;&#x5370;&#x5B83;&#x4EEC;&#x3002;</p><p>&#x6211;&#x4EEC;&#x628A;&#x8FD9;&#x6837;&#x7684;&#x4E00;&#x79CD;&#x7ED3;&#x6784;&#xFF0C;&#x53EB;&#x505A;<strong><em>&#x6570;&#x636E;&#x7ED3;&#x6784;(Data Structure)</em></strong>&#x3002;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5C31;&#x662F;&#x8BA1;&#x7B97;&#x673A;&#x5B58;&#x50A8;&#x5E76;&#x7EC4;&#x7EC7;&#x6570;&#x636E;&#x7684;&#x65B9;&#x5F0F;&#x3002;&#x6211;&#x4EEC;&#x501F;&#x52A9;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x6211;&#x4EEC;&#x7684;&#x9700;&#x8981;&#x7EC4;&#x7EC7;&#x8D77;&#x6570;&#x636E;&#xFF0C;&#x8FDB;&#x884C;&#x8BF8;&#x5982;&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x3001;&#x6392;&#x5E8F;&#x3001;&#x641C;&#x7D22;&#x3001;&#x904D;&#x5386;&#x7B49;&#x64CD;&#x4F5C;&#xFF0C;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x6216;&#x4F18;&#x5316;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x3002;&#x4E0D;&#x540C;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x9002;&#x5408;&#x89E3;&#x51B3;&#x4E0D;&#x540C;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5B66;&#x4E60;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x91CD;&#x70B9;&#xFF0C;&#x5C31;&#x662F;&#x501F;&#x52A9;&#x6211;&#x4EEC;&#x5BF9;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x4E86;&#x89E3;&#xFF0C;&#x9009;&#x62E9;&#x6B63;&#x786E;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x6765;&#x89E3;&#x51B3;&#x6211;&#x4EEC;&#x9047;&#x5230;&#x7684;&#x95EE;&#x9898;&#x3002;</p><p>&#x800C;&#x6211;&#x4EEC;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x9700;&#x8981;&#x6309;&#x7167;&#x7EBF;&#x6027;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x7EC4;&#x7EC7;&#x56FA;&#x5B9A;&#x6570;&#x91CF;(fixed amount&#xFF09;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x652F;&#x6301;&#x6570;&#x636E;&#x7684;&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x3001;&#x641C;&#x7D22;&#x3001;&#x904D;&#x5386;&#x3001;&#x5B9A;&#x4F4D;&#xFF08;locate&#xFF09;&#x7B49;&#x64CD;&#x4F5C;&#x3002;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x6211;&#x4EEC;&#x79F0;&#x4E3A;<strong><em>&#x6570;&#x7EC4;&#xFF08;Array)</em></strong>&#x3002;&#x7EDD;&#x5927;&#x591A;&#x6570;&#x4E3B;&#x6D41;&#x8BA1;&#x7B97;&#x673A;&#x8BED;&#x8A00;&#x90FD;&#x652F;&#x6301;&#x6570;&#x7EC4;&#x529F;&#x80FD;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x7B14;&#x8BB0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x4F7F;&#x7528;Java&#xFF0C;&#x63D0;&#x4F9B;&#x5927;&#x90E8;&#x5206;&#x6570;&#x7EC4;&#x529F;&#x80FD;&#x7684;Java&#x7C7B;&#x662F;Arrays&#x7C7B;&#xFF0C;&#x5B83;&#x662F;java.util&#x5305;&#x4E0B;&#x9762;&#x7684;&#x4E00;&#x4E2A;&#x7C7B;&#x3002;</p><p>&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x4F7F;&#x7528;&#x6570;&#x7EC4;&#x6765;&#x89E3;&#x51B3;&#x4E0A;&#x9762;&#x63D0;&#x5230;&#x7684;&#x95EE;&#x9898;&#x5462;&#xFF1F;&#x5F88;&#x663E;&#x7136;&#xFF0C;&#x6211;&#x4EEC;&#x4EC5;&#x9700;&#x5C06;&#x9700;&#x8981;&#x5B58;&#x50A8;&#x7684;&#x6570;&#x636E;&#x8F93;&#x5165;&#x5230;&#x4E00;&#x4E2A;array&#x5BF9;&#x8C61;&#x91CC;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x904D;&#x5386;&#x5B83;&#x5E76;&#x6253;&#x5370;&#x51FA;&#x76F8;&#x5E94;&#x7684;&#x7ED3;&#x679C;&#x3002;</p><p>Java&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;
+    public class Solution {
+        public static void main(String[] args) {
+            int[] numArray = new int[10];
+            for (int i = 0; i &lt; 10; ++i) {
+                numArray[i] = i;
+            }
+            for (int i = 0; i &lt; 10; ++i) {
+                System.out.print(numArray[i] + &quot; &quot;);
+            }
+            System.out.println(&quot;&quot;);
+        }
+    }</p><p>&#x6211;&#x4EEC;&#x5BF9;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;&#xFF0C;&#x7EC8;&#x7AEF;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#x662F;&#x8FD9;&#x6837;&#x7684;&#xFF1A;
+    $ javac Solution.java
+    $ java Solution
+    0 1 2 3 4 5 6 7 8 9 
+&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x5C31;&#x4EE5;Java&#x4E3A;&#x4F8B;&#xFF0C;&#x6765;&#x4ECB;&#x7ECD;&#x6570;&#x7EC4;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x539F;&#x7406;&#x548C;&#x529F;&#x80FD;&#x3002;</p><h2 id="&#x539F;&#x7406;">&#x539F;&#x7406;</h2><p>&#x6B63;&#x5982;&#x4E0A;&#x9762;&#x4ECB;&#x7ECD;&#x7684;&#xFF0C;&#x6570;&#x7EC4;&#x662F;&#x4E00;&#x79CD;&#x6309;&#x7167;&#x7EBF;&#x6027;&#x7684;&#x987A;&#x5E8F;&#x6765;&#x7EC4;&#x7EC7;&#x56FA;&#x5B9A;&#x6570;&#x91CF;(fixed amount&#xFF09;&#x7684;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x5B83;&#x6240;&#x50A8;&#x5B58;&#x7684;&#x6570;&#x636E;&#x79F0;&#x4E3A;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#xFF08;element&#xFF09;&#x3002;</p><p>&#x5728;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x6570;&#x7EC4;&#x5404;&#x5143;&#x7D20;&#x901A;&#x5E38;&#x4E5F;&#x662F;&#x6309;&#x7167;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x6392;&#x5217;&#x7684;&#xFF0C;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x5360;&#x6709;&#x4E00;&#x5757;&#x76F8;&#x540C;&#x5927;&#x5C0F;&#x7684;&#x5185;&#x5B58;&#xFF0C;&#x8FD9;&#x4E2A;&#x5185;&#x5B58;&#x6709;&#x591A;&#x5927;&#xFF0C;&#x662F;&#x5143;&#x7D20;&#x81EA;&#x8EAB;&#x7684;&#x5927;&#x5C0F;&#x51B3;&#x5B9A;&#x7684;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x77E5;&#x9053;&#x6570;&#x7EC4;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6240;&#x5728;&#x7684;&#x5185;&#x5B58;&#x5730;&#x5740;&#xFF0C;&#x8981;&#x8BBF;&#x95EE;&#x7B2C;k&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x8BA1;&#x7B97;<strong><em>&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740; + &#x6BCF;&#x4E2A;&#x5143;&#x7D20;&#x6240;&#x5360;&#x7684;&#x5185;&#x5B58; x (k - 1)</em></strong>&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x5F97;&#x5230;&#x7B2C;k&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5730;&#x5740;&#x4E86;&#x3002;&#x3010;&#x56FE;&#x3011;</p><p>&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x5C06;&#x6570;&#x7EC4;&#x60F3;&#x8C61;&#x4E3A;&#x4E00;&#x6392;&#x753B;&#x5728;&#x5730;&#x4E0A;&#x7684;&#x683C;&#x5B50;&#xFF0C;&#x6BCF;&#x4E2A;&#x683C;&#x5B50;&#x91CC;&#x653E;&#x7740;&#x4E00;&#x6837;&#x4E1C;&#x897F;&#xFF0C;&#x8FD9;&#x6837;&#x4E1C;&#x897F;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x5B58;&#x50A8;&#x548C;&#x7BA1;&#x7406;&#x7684;&#x5143;&#x7D20;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x6BCF;&#x4E2A;&#x683C;&#x5B50;&#x6709;&#x4E00;&#x4E2A;&#x72EC;&#x5C5E;&#x4E8E;&#x5B83;&#x7684;&#xFF0C;&#x4ECE;0&#x5F80;&#x4E0A;&#x6392;&#x5217;&#x7684;&#x7F16;&#x53F7;&#x3002;</p><h3 id="java-arrays&#x53EA;&#x80FD;&#x50A8;&#x5B58;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6216;&#x5F15;&#x7528;">Java Arrays&#x53EA;&#x80FD;&#x50A8;&#x5B58;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6216;&#x5F15;&#x7528;</h3><p>&#x6709;&#x4E00;&#x70B9;&#x9700;&#x8981;&#x5F3A;&#x8C03;&#xFF1A;java&#x7684;Arrays&#x7C7B;&#x6240;&#x50A8;&#x5B58;&#x7684;&#x5143;&#x7D20;&#x53EA;&#x80FD;&#x662F;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#xFF08;primitive&#xFF09;&#x6216;&#x5B9E;&#x4F8B;&#x7684;&#x5F15;&#x7528;&#xFF08;reference&#xFF09;&#x3002;
+&#x6BD4;&#x5982;&#xFF0C;numArrays[0]&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5B58;&#x5757;&#x91CC;&#xFF0C;&#x653E;&#x7F6E;&#x7684;&#x662F;&#x4E00;&#x4E2A;int&#xFF0C;&#x8FD9;&#x662F;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x3002;&#x4F46;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x65B0;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;class&#xFF0C;&#x540D;&#x5B57;&#x53EB;Person&#xFF0C;&#x4EE5;&#x4E00;&#x4E2A;Person&#x5B9E;&#x4F8B;&#x4F5C;&#x4E3A;java&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x8BB0;&#x4E3A;personArrays[0]&#xFF0C;&#x90A3;&#x4E48;&#x6570;&#x7EC4;&#x5BF9;&#x5E94;&#x7684;&#x5185;&#x5B58;&#x5757;&#x4E2D;&#x6240;&#x5B58;&#x50A8;&#x7684;&#xFF0C;&#x662F;new Person(&#x2026;)&#x65F6;&#x5360;&#x7528;&#x7684;&#x5185;&#x5B58;&#x7684;&#x5730;&#x5740;&#xFF0C;&#x5927;&#x5C0F;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF08;byte&#xFF09;&#x3002;</p><p>&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x5F53;&#x6570;&#x7EC4;&#x9700;&#x8981;&#x4FDD;&#x5B58;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x5B83;&#x6240;&#x4FDD;&#x5B58;&#x7684;&#xFF0C;&#x53EA;&#x662F;&#x6307;&#x5411;&#x90A3;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;&#x4E00;&#x4E2A;&#x5F15;&#x7528;&#x5730;&#x5740;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x8BE5;&#x5B9E;&#x4F8B;&#x672C;&#x8EAB;&#x3002;</p><h2 id="&#x529F;&#x80FD;&#x53CA;&#x590D;&#x6742;&#x5EA6;">&#x529F;&#x80FD;&#x53CA;&#x590D;&#x6742;&#x5EA6;</h2><h3 id="&#x6570;&#x7EC4;&#x7684;&#x529F;&#x80FD;">&#x6570;&#x7EC4;&#x7684;&#x529F;&#x80FD;</h3><p>&#x6709;&#x4E86;&#x6570;&#x7EC4;&#x8FD9;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x975E;&#x5E38;&#x65B9;&#x4FBF;&#x5730;&#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x5B9A;&#x4F4D;&#xFF08;locate&#xFF09;&#x548C;&#x904D;&#x5386;&#xFF08;iteration&#xFF09;&#xFF0C;&#x6570;&#x7EC4;&#x4E5F;&#x652F;&#x6301;&#x63D2;&#x5165;&#xFF08;add/insert&#xFF09;&#x3001;&#x5220;&#x9664;&#xFF08;delete&#xFF09;&#x64CD;&#x4F5C;&#xFF0C;&#x4F46;&#x76F8;&#x5BF9;&#x5C31;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x65B9;&#x4FBF;&#x4E86;&#xFF0C;&#x6B64;&#x5916;&#x6570;&#x7EC4;&#x8FD8;&#x652F;&#x6301;&#x590D;&#x5236;&#xFF08;copy&#xFF09;&#x3001;&#x641C;&#x7D22;&#xFF08;search&#xFF09;&#x548C;&#x6392;&#x5E8F;(sort&#xFF09;&#x64CD;&#x4F5C;&#x3002;</p><p>&#x63D2;&#x5165;&#x3001;&#x5220;&#x9664;&#x3001;&#x641C;&#x7D22;&#x3001;&#x6392;&#x5E8F;&#x7B49;&#x64CD;&#x4F5C;&#x662F;&#x4EC0;&#x4E48;&#x610F;&#x601D;&#xFF0C;&#x662F;&#x6BD4;&#x8F83;&#x76F4;&#x89C2;&#x7684;&#x3002;&#x4F46;&#x5B9A;&#x4F4D;&#x3001;&#x590D;&#x5236;&#x548C;&#x904D;&#x5386;&#x64CD;&#x4F5C;&#x7684;&#x542B;&#x4E49;&#x6709;&#x4E9B;&#x590D;&#x6742;&#xFF0C;&#x8FD9;&#x91CC;&#x8FDB;&#x884C;&#x4E00;&#x4E0B;&#x4ECB;&#x7ECD;&#x3002;</p><ol><li><p>&#x5B9A;&#x4F4D;&#xFF08;locate&#xFF09;&#xFF0C;&#x662F;&#x6307;&#x7ED9;&#x4F60;&#x6570;&#x636E;&#x5728;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E2D;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x6839;&#x636E;&#x8FD9;&#x4E2A;&#x4F4D;&#x7F6E;&#x6765;&#x63D0;&#x53D6;&#x51FA;&#x6570;&#x636E;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8FD9;&#x91CC;&#x6709;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x63D0;&#x53D6;&#x51FA;&#x8FD9;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x7B2C;3&#x4E2A;&#x5143;&#x7D20;&#x3002;&#x8FD9;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x7528;&#x4E0A;&#x9762;&#x4EE3;&#x7801;&#x4E2D;&#x7684;numArray[2]&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x63D0;&#x53D6;&#x51FA;numArray&#x6570;&#x7EC4;&#x7684;&#x7B2C;3&#x4E2A;&#x5143;&#x7D20;&#x4E86;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5E76;&#x4E0D;&#x662F;numArray[3]&#xFF0C;&#x56E0;&#x4E3A;&#x8BA1;&#x7B97;&#x673A;&#x8BA1;&#x6570;&#x662F;&#x4ECE;0&#x5F00;&#x59CB;&#x7684;&#x3002;&#x4E5F;&#x8BB8;&#x4F60;&#x4F1A;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x4E0A;&#x6587;&#x63D0;&#x5230;&#x7684;&#x8BBF;&#x95EE;&#x7B2C;k&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x516C;&#x5F0F;&#xFF0C;&#x5982;&#x679C;&#x4ECE;0&#x8BA1;&#x6570;&#xFF0C;&#x8BA1;&#x7B97;&#x8D77;&#x6765;&#x4F1A;&#x66F4;&#x7B80;&#x5355;&#x3002;</p><p>&#x4E0D;&#x662F;&#x6240;&#x6709;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x90FD;&#x652F;&#x6301;&#x5B9A;&#x4F4D;&#x3002;&#x201C;&#x5B9A;&#x4F4D;&#x201D;&#x4EC5;&#x5BF9;&#x6709;&#x201C;&#x987A;&#x5E8F;&#x201D;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x9002;&#x7528;&#x3002;&#x8BD5;&#x60F3;&#xFF0C;&#x753B;&#x5F97;&#x4E71;&#x4E03;&#x516B;&#x7CDF;&#x7684;&#x4E00;&#x5927;&#x5806;&#x683C;&#x5B50;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x600E;&#x6837;&#x201C;&#x5B9A;&#x4F4D;&#x201D;&#x5462;&#xFF1F;&#x6839;&#x672C;&#x5C31;&#x6CA1;&#x6709;&#x201C;&#x4F4D;&#x7F6E;&#x201C;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x3002;</p><p>&#x65B9;&#x4FBF;&#x5730;&#x5B9A;&#x4F4D;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x8868;&#x793A;&#x4F4D;&#x7F6E;&#x7684;&#x201D;key&#x201C;&#xFF0C;&#x624D;&#x80FD;&#x51C6;&#x786E;&#x5730;&#x77E5;&#x9053;&#x5B58;&#x653E;&#x90A3;&#x4E2A;&#x5143;&#x7D20;&#x7684;&#x5C0F;&#x683C;&#x5B50;&#x5728;&#x54EA;&#x91CC;&#x3002;&#x800C;&#x6570;&#x7EC4;&#x7684;&#x201C;key&#x201D;&#x5C31;&#x662F;&#x5B83;&#x7684;&#x987A;&#x5E8F;&#x7F16;&#x7801;&#xFF0C;&#x6BD4;&#x5982;numArray[0]&#x5F53;&#x4E2D;&#x7684;&#x90A3;&#x4E2A;&#x201D;0&#x201C;&#x3002;&#x4EE5;&#x540E;&#x6211;&#x4EEC;&#x4F1A;&#x770B;&#x5230;HashMap&#xFF0C;&#x5B83;&#x7684;&#x201C;key&#x201D;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#x7F16;&#x7801;&#x7684;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x800C;&#x54C8;&#x5E0C;&#x7F16;&#x7801;&#x672C;&#x8D28;&#x4E0A;&#x4ECD;&#x7136;&#x662F;&#x5C06;&#x5B57;&#x7B26;&#x4E32;&#x8F6C;&#x6362;&#x6210;&#x4E86;&#x6570;&#x7EC4;&#x7684;&#x987A;&#x5E8F;&#x7F16;&#x7801;&#x3002;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x8BF4;&#xFF0C;&#x987A;&#x5E8F;&#x7F16;&#x7801;&#x662F;&#x65B9;&#x4FBF;&#x5FEB;&#x901F;&#x5730;&#x8FDB;&#x884C;&#x201C;&#x5B9A;&#x4F4D;&#x201D;&#x64CD;&#x4F5C;&#x7684;&#x4E00;&#x79CD;&#x5E38;&#x89C1;&#x601D;&#x8DEF;&#x3002;</p></li>
+<li><p>&#x90A3;&#x4E48;&#xFF0C;&#x590D;&#x5236;&#x5462;&#xFF1F;&#x4F60;&#x53EF;&#x80FD;&#x89C9;&#x5F97;&#xFF0C;&#x590D;&#x5236;&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x539F;&#x6765;&#x7684;&#x6570;&#x7EC4;&#x6709;&#x4EC0;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x628A;&#x539F;&#x6765;&#x6570;&#x7EC4;&#x7684;&#x4E1C;&#x897F;&#x539F;&#x5C01;&#x4E0D;&#x52A8;&#x642C;&#x8FC7;&#x6765;&#x5C31;&#x884C;&#x4E86;&#x3002;</p><p>&#x8FD9;&#x79CD;&#x5BF9;&#x590D;&#x5236;&#x7684;&#x7406;&#x89E3;&#x662F;&#x4E0D;&#x5168;&#x9762;&#x7684;&#x3002;
+ &#x4E0A;&#x9762;&#x63D0;&#x5230;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x53EA;&#x80FD;&#x662F;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x6216;&#x5B9E;&#x4F8B;&#x7684;&#x5F15;&#x7528;&#x3002;&#x57FA;&#x7840;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x53EA;&#x9700;&#x8981;&#x201C;&#x642C;&#x8FC7;&#x6765;&#x201D;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#xFF0C;&#x6B64;&#x65F6;&#x65E7;&#x6570;&#x7EC4;&#x548C;&#x65B0;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x662F;&#x76F8;&#x4E92;&#x72EC;&#x7ACB;&#x7684;&#x3002;
+ &#x4F46;&#x5982;&#x679C;&#x6570;&#x7EC4;&#x7684;&#x5143;&#x7D20;&#x662F;&#x4E00;&#x4E2A;&#x5B9E;&#x4F8B;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x90A3;&#x4E48;&#xFF0C;&#x95EE;&#x9898;&#x5C31;&#x590D;&#x6742;&#x4E86;&#x3002;
+ &#x6211;&#x4EEC;&#x6765;&#x770B;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#xFF1A;
+     public class Solution {
+         private static class Person {
+             String name;
+             int age;
+             public Person(String name, int age) {
+                 this.name = name;
+                 this.age = age;
+             }
+         }</p><pre><code>     public static void main(String[] args) {
+         Person[] p1 = new Person[1];
+         p1[0] = new Person(&quot;Tom&quot;, 13);
+         Person[] p2 = new Person[1];
+         p2 = Arrays.copyOf(p1,1);
+
+         System.out.println(p1[0].name);
+         System.out.println(p2[0].name);
+
+         p1[0].name = &quot;Mary&quot;;
+
+         System.out.println(p1[0].name);
+         System.out.println(p2[0].name);
+     }
+ }</code></pre>
+<p>&#x56DB;&#x4E2A;&#x6253;&#x5370;&#x547D;&#x4EE4;&#xFF0C;&#x5206;&#x522B;&#x8F93;&#x51FA;&#x4E86;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;
+ &#x8FD9;&#x662F;&#x8F93;&#x51FA;&#x7684;&#x7ED3;&#x679C;&#xFF1A;
+     Tom
+     Tom
+     Mary
+     Mary // Also changed!</p><p>&#x65B0;&#x590D;&#x5236;&#x7684;&#x6570;&#x7EC4;&#x5404;&#x5143;&#x7D20;&#xFF0C;&#x5728;&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x590D;&#x5236;&#x7684;&#x4E5F;&#x662F;&#x76F8;&#x5E94;&#x5B9E;&#x4F8B;&#x7684;&#x5F15;&#x7528;&#xFF0C;&#x4E24;&#x4E2A;&#x5F15;&#x7528;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5730;&#x5740;&#x3002;&#x6B64;&#x65F6;&#xFF0C;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x64CD;&#x4F5C;&#x6539;&#x53D8;&#x4E86;&#x90A3;&#x4E2A;&#x5730;&#x5740;&#x7684;&#x5B9E;&#x4F8B;&#x5185;&#x5BB9;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x7684;&#x5BF9;&#x5E94;&#x5143;&#x7D20;&#x4E5F;&#x4F1A;&#x76F8;&#x5E94;&#x53D8;&#x5316;&#x3002;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x6307;&#x5411;&#x7684;&#x5B9E;&#x9645;&#x5185;&#x5BB9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BE5;&#x5B9E;&#x4F8B;&#xFF0C;&#x5176;&#x5B9E;&#x5E76;&#x6CA1;&#x6709;&#x88AB;&#x201C;&#x590D;&#x5236;&#x201D;&#xFF0C;&#x88AB;&#x590D;&#x5236;&#x7684;&#x53EA;&#x662F;&#x5B83;&#x7684;&#x5F15;&#x7528;&#x3002;&#x8FD9;&#x79CD;&#x590D;&#x5236;&#xFF0C;&#x53EB;&#x505A;&#x201C;&#x6D45;&#x590D;&#x5236;&#x201D;&#xFF08;Shallow Copy&#xFF09;&#x3002;
+ &#x5982;&#x679C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x771F;&#x7684;&#x590D;&#x5236;&#x6240;&#x6709;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x4FEE;&#x6539;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x53E6;&#x4E00;&#x4E2A;&#x6570;&#x7EC4;&#x5143;&#x7D20;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#x4E0D;&#x53D8;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x201C;&#x6DF1;&#x590D;&#x5236;&#x201D;&#xFF08;Deep Copy&#xFF09;&#x3002;&#x5B83;&#x548C;&#x201D;&#x6D45;&#x590D;&#x5236;&#x201C;&#x7684;&#x533A;&#x522B;&#x5C31;&#x5728;&#x4E8E;&#xFF0C;&#x65B0;&#x7684;&#x6570;&#x7EC4;&#x91CC;&#x9762;&#x7684;&#x5B9E;&#x4F8B;&#xFF0C;&#x5185;&#x5BB9;&#x548C;&#x590D;&#x5236;&#x65F6;&#x65E7;&#x6570;&#x7EC4;&#x5BF9;&#x5E94;&#x7684;&#x5B9E;&#x4F8B;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x4F46;&#x5374;&#x662F;&#x65B0;&#x7684;&#x4E00;&#x5757;&#x5185;&#x5B58;&#x4E0B;&#x58F0;&#x660E;&#x7684;&#x65B0;&#x5B9E;&#x4F8B;&#x3002;&#x4FEE;&#x6539;&#x65E7;&#x5B9E;&#x4F8B;&#x65F6;&#xFF0C;&#x65B0;&#x6570;&#x7EC4;&#x7684;&#x5185;&#x5BB9;&#x4E0D;&#x4F1A;&#x6539;&#x53D8;&#x3002;</p><p>&#x6CE8;&#x610F;String&#x7684;&#x7279;&#x6B8A;&#x6027;&#xFF1A;&#x867D;&#x7136;&#x672C;&#x8D28;&#x662F;pass by reference&#xFF0C;&#x4F46;&#x56E0;&#x4E3A;invariable&#xFF0C;&#x6240;&#x4EE5;&#x529F;&#x80FD;&#x4E0A;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;pass by value.
+         public class Solution {
+           public static void main(String[] args)
+           {
+             String[] a1 = new String[1];
+             a1[0] = &quot;Tom&quot;;
+             String[] a2 = a1.clone();
+             System.out.println(a1[0]);
+             System.out.println(a2[0]);</p><pre><code>         a1[0] = &quot;Mary&quot;; // Assigned to a new address!
+         System.out.println(a1[0]);//&quot;Mary&quot;
+         System.out.println(a2[0]);//&quot;Tom&quot;
+       }
+     }</code></pre>
+<p>&#x6DF1;&#x6D45;&#x590D;&#x5236;&#x7684;&#x8054;&#x7CFB;&#x4E0E;&#x533A;&#x522B;&#xFF0C;&#x5982;&#x56FE;&#x6240;&#x793A;&#x3010;&#x56FE;&#x3011;&#x3002;</p></li></ol>
+<ol><li><p>&#x6700;&#x540E;&#x662F;&#x904D;&#x5386;&#x3002;&#x904D;&#x5386;&#x662F;&#x4EC0;&#x4E48;&#x5462;&#xFF1F;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x5C31;&#x662F;&#x628A;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E2D;&#x6240;&#x6709;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x8BBF;&#x95EE;&#x4E00;&#x904D;&#x4E14;&#x4E0D;&#x91CD;&#x590D;&#x3002;&#x6570;&#x7EC4;&#x904D;&#x5386;&#x53EA;&#x9700;&#x8981;&#x628A;&#x6240;&#x6709;&#x5143;&#x7D20;&#x6309;&#x7EBF;&#x6027;&#x987A;&#x5E8F;&#x8BBF;&#x95EE;&#x4E00;&#x904D;&#x5373;&#x53EF;&#x3002;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x904D;&#x5386;&#x66F4;&#x4E3A;&#x590D;&#x6742;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x5185;&#x5BB9;&#x4E2D;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p><p>&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#xFF0C;&#x6570;&#x7EC4;&#x90FD;&#x652F;&#x6301;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x5B9A;&#x4F4D;&#x529F;&#x80FD;&#x662F;&#x6570;&#x7EC4;&#x7684;&#x5F3A;&#x9879;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x7279;&#x522B;&#x7B80;&#x5355;&#x5FEB;&#x6377;&#x5730;&#x652F;&#x6301;&#x5B9A;&#x4F4D;&#x529F;&#x80FD;&#x3002;</p><p>&#x6211;&#x4EEC;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x4E4B;&#x524D;&#x4E00;&#x76F4;&#x90FD;&#x5728;&#x7528;&#x201C;&#x65B9;&#x4FBF;&#x201D;&#x201C;&#x7B80;&#x5355;&#x5FEB;&#x6377;&#x201D;&#x8FD9;&#x4E9B;&#x8BCD;&#x6765;&#x5F62;&#x5BB9;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x652F;&#x6301;&#x67D0;&#x4E9B;&#x529F;&#x80FD;&#x64CD;&#x4F5C;&#x7684;&#x80FD;&#x529B;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x6709;&#x6CA1;&#x6709;&#x529E;&#x6CD5;&#xFF0C;&#x628A;&#x8FD9;&#x4E9B;&#x6A21;&#x7CCA;&#x7684;&#x5F62;&#x5BB9;&#x8BCD;&#x7CBE;&#x7EC6;&#x5316;&#x3001;&#x91CF;&#x5316;&#x5462;&#xFF1F;&#x8FD9;&#x6837;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6BD4;&#x8F83;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5BF9;&#x540C;&#x4E00;&#x529F;&#x80FD;&#x7684;&#x652F;&#x6301;&#x7A0B;&#x5EA6;&#x3002;</p><p>&#x8BA1;&#x7B97;&#x673A;&#x79D1;&#x5B66;&#x5BB6;&#x4E3A;&#x6211;&#x4EEC;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x5F3A;&#x5927;&#x7684;&#x6B66;&#x5668;&#xFF1A;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x6765;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;</p></li></ol>
+<h3 id="&#x590D;&#x6742;&#x5EA6;&#x53CA;bigo">&#x590D;&#x6742;&#x5EA6;&#x53CA;Big(O)</h3><p>&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x6240;&#x652F;&#x6301;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x6709;&#x5176;&#x65F6;&#x95F4;&#x4E0A;&#x7684;&#x201C;&#x4EE3;&#x4EF7;&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x7528;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#x6765;&#x8861;&#x91CF;&#x3002;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x662F;&#x6307;&#x7B97;&#x6CD5;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x4E0E;&#x8F93;&#x5165;&#x6570;&#x636E;&#x91CF;&#x7684;&#x51FD;&#x6570;&#x5173;&#x7CFB;&#xFF0C;&#x5E38;&#x7528;&#x5927;&#x5199;&#x5B57;&#x6BCD;O&#x8868;&#x793A;&#x3002;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x662F;&#x6E10;&#x8FDB;&#x7684;&#xFF1A;&#x5F53;&#x8F93;&#x5165;&#x6570;&#x636E;&#x91CF;&#x9010;&#x6E10;&#x589E;&#x52A0;&#x4EE5;&#x81F3;&#x8D8B;&#x4E8E;&#x65E0;&#x7A77;&#x65F6;&#xFF0C;&#x7B97;&#x6CD5;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x6E10;&#x8FD1;&#x4E8E;&#x67D0;&#x4E2A;&#x5173;&#x4E8E;&#x6570;&#x636E;&#x91CF;n&#x7684;&#x51FD;&#x6570;&#x3002;</p><p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E0D;&#x4EC5;&#x6709;Big O&#x4E00;&#x79CD;&#x8868;&#x8FF0;&#x65B9;&#x5F0F;&#xFF0C;&#x800C;&#x4E14;Big O&#x7684;&#x6570;&#x5B66;&#x542B;&#x4E49;&#x8F83;&#x4E3A;&#x590D;&#x6742;&#xFF0C;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x300A;&#x7B97;&#x6CD5;&#x5BFC;&#x8BBA;&#x300B;&#x7B49;&#x6750;&#x6599;&#x67E5;&#x770B;&#x7EC6;&#x8282;&#x3002;&#x6211;&#x4EEC;&#x5B66;&#x4E60;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x65F6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x77E5;&#x9053;Big O&#x8868;&#x793A;&#x8F93;&#x5165;&#x91CF;&#x548C;&#x64CD;&#x4F5C;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x3002;&#x800C;&#x4E14;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x53D6;&#x53D8;&#x5316;&#x91CF;&#x6700;&#x5927;&#x7684;&#x5173;&#x7CFB;&#xFF08;&#x6BD4;&#x5982;&#x591A;&#x9879;&#x5F0F;&#x4E2D;&#x6700;&#x9AD8;&#x6B21;&#x6570;&#x7684;&#x9879;&#xFF09;&#xFF0C;&#x800C;&#x4E14;&#x6240;&#x6709;&#x7684;&#x7CFB;&#x6570;&#x90FD;&#x662F;1&#x3002;</p><p>&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x64CD;&#x4F5C;&#x5BF9;&#x4EFB;&#x4F55;&#x5927;&#x5C0F;&#x4E3A;n&#x7684;&#x8F93;&#x5165;&#xFF0C;&#x6700;&#x591A;&#x9700;&#x8981;2n^2 + 3n&#x65F6;&#x95F4;&#x8FD0;&#x884C;&#xFF0C;&#x8FD9;&#x4E2A;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4ECD;&#x7136;&#x662F;O(n^2)&#xFF0C;&#x56E0;&#x4E3A;n&#x8D8B;&#x4E8E;&#x65E0;&#x7A77;&#x65F6;&#xFF0C;&#x7CFB;&#x6570;&#x548C;n&#x9879;&#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#x5C31;&#x6CA1;&#x6709;&#x90A3;&#x4E48;&#x201C;&#x91CD;&#x8981;&#x201D;&#x3002;&#x8FD9;&#x4E00;&#x6027;&#x8D28;&#xFF0C;&#x662F;Big O&#x7684;&#x6E10;&#x8FDB;&#x6027;&#x8D28;&#x9020;&#x6210;&#x7684;&#x3002;&#x3010;&#x51C6;&#x786E;&#xFF1F;&#x3011;</p><p>&#x6709;&#x4E9B;&#x64CD;&#x4F5C;&#x5728;&#x4E0D;&#x540C;&#x60C5;&#x51B5;&#x4E0B;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x4E5F;&#x662F;&#x4E0D;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x901A;&#x5E38;&#x5206;&#x4E3A;&#x5E73;&#x5747;&#x60C5;&#x51B5;&#x548C;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x4E24;&#x79CD;&#xFF0C;&#x6211;&#x4EEC;&#x901A;&#x5E38;&#x4F7F;&#x7528;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x6765;&#x8861;&#x91CF;&#xFF0C;&#x6709;&#x65F6;&#x4E5F;&#x4F7F;&#x7528;&#x5E73;&#x5747;&#x60C5;&#x51B5;&#x3002;&#x672C;&#x7B14;&#x8BB0;&#x9664;&#x975E;&#x7279;&#x522B;&#x8BF4;&#x660E;&#xFF0C;&#x6240;&#x6307;&#x90FD;&#x662F;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x3002;</p><p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x51E0;&#x79CD;&#x5E38;&#x89C1;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x53CA;&#x5176;&#x5E38;&#x89C1;&#x7684;&#x4F8B;&#x5B50;&#x3002;</p><ul><li>O(1)
+  &#x8FD9;&#x662F;&#x6700;&#x7406;&#x60F3;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x5B83;&#x8BF4;&#x660E;&#x64CD;&#x4F5C;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x662F;&#x6052;&#x5B9A;&#x7684;&#xFF0C;&#x4E0D;&#x53D7;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x6240;&#x5F71;&#x54CD;&#x3002;
+  &#x5176;&#x5B9E;&#xFF0C;O(1)&#x7684;&#x7B97;&#x6CD5;&#x4E5F;&#x8BB8;&#x82B1;&#x8D39;&#x4E86;&#x5F88;&#x957F;&#x7684;&#x7EDD;&#x5BF9;&#x65F6;&#x95F4;&#x3002;&#x4F46;&#x5B83;&#x4E0D;&#x53D7;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7684;&#x5927;&#x5C0F;&#x5F71;&#x54CD;&#xFF0C;&#x6240;&#x4EE5;&#x8F93;&#x5165;&#x7684;&#x6570;&#x636E;&#x5F88;&#x5927;&#x7684;&#x65F6;&#x5019;&#xFF0C;O(1)&#x7B97;&#x6CD5;&#x5C31;&#x4F1A;&#x663E;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x201C;&#x7701;&#x529B;&#x201C;&#x3002;&#x8FD9;&#x91CC;&#x9700;&#x8981;&#x518D;&#x6B21;&#x5F3A;&#x8C03;&#xFF0C;Big O&#x662F;&#x8F93;&#x5165;&#x91CF;&#x548C;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x76F8;&#x5BF9;&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x7EDD;&#x5BF9;&#x7684;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x3002;
+</li>
+<li>O(log n)
+  &#x8BF4;&#x660E;&#x8F93;&#x5165;&#x6570;&#x636E;&#x548C;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x662F;log n&#x7684;&#x5173;&#x7CFB;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x6BD4;&#x6570;&#x636E;&#x7684;&#x589E;&#x957F;&#x6162;&#x4E00;&#x4E9B;&#x3002;&#x4E00;&#x4E2A;&#x5178;&#x578B;&#x7684;O(log n)&#x7B97;&#x6CD5;&#x662F;Binary Search&#x7B97;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x540E;&#x9762;&#x4F1A;&#x8BB2;&#x3002;
+</li>
+<li>O(n)
+  &#x8BF4;&#x660E;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x548C;&#x8F93;&#x5165;&#x6570;&#x636E;&#x7684;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x662F;&#x4E00;&#x81F4;&#x7684;&#xFF0C;&#x53C8;&#x79F0;&#x4E3A;&#x7EBF;&#x6027;&#xFF08;linear&#xFF09;&#x65F6;&#x95F4;&#x3002;&#x5E38;&#x89C1;&#x4E8E;&#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;Linear Search&#x4E5F;&#x662F;O(n)&#x7684;&#x3002;
+</li>
+<li>O(n log n)
+  &#x901A;&#x5E38;&#xFF0C;&#x8FD9;&#x4E00;&#x590D;&#x6742;&#x5EA6;&#x7684;&#x51FA;&#x73B0;&#x8BF4;&#x660E;O(n)&#x7684;&#x64CD;&#x4F5C;&#x88AB;&#x6267;&#x884C;&#x4E86;log n&#x6B21;&#xFF0C;&#x6216;&#x8005;O(log n)&#x64CD;&#x4F5C;&#x88AB;&#x6267;&#x884C;&#x4E86;n&#x6B21;&#x3002;&#x5E38;&#x89C1;&#x4E8E;QuickSort&#x548C;MergeSort&#x7B49;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#xFF0C;&#x662F;&#x6392;&#x5E8F;&#x7B97;&#x6CD5;&#x7684;&#x4E00;&#x79CD;&#x7406;&#x60F3;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x3002;
+</li>
+<li>O(n^2^)
+  &#x53C8;&#x79F0;&#x4E3A;&#x4E8C;&#x6B21;(Quadratic)&#x65F6;&#x95F4;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x662F;&#x8F93;&#x5165;&#x6570;&#x636E;&#x589E;&#x957F;&#x901F;&#x5EA6;&#x7684;&#x5E73;&#x65B9;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x8F93;&#x5165;&#x4E86;3&#x500D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5219;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x662F;&#x4EE5;&#x524D;&#x7684;9&#x500D;&#x3002;&#x5E38;&#x89C1;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x4E00;&#x79CD;&#x6BD4;&#x8F83;&#x5DEE;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E86;&#x3002;&#x5E38;&#x89C1;&#x4E8E;&#x5D4C;&#x5957;for loop&#xFF0C;&#x6BD4;&#x5982;BubbleSort&#x3002;
+</li>
+<li><p>O(2^n^)
+  &#x6307;&#x6570;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x8FD0;&#x884C;&#x65F6;&#x95F4;&#x662F;2&#x7684;n&#x6B21;&#x65B9;&#x500D;&#xFF0C;&#x6548;&#x7387;&#x6781;&#x4F4E;&#xFF0C;&#x5E94;&#x5F53;&#x907F;&#x514D;&#x3002;&#x6590;&#x6CE2;&#x90A3;&#x5951;&#x6570;&#x5217;&#x6309;&#x7167;&#x5B9A;&#x4E49;&#x53EF;&#x4EE5;&#x7528;&#x6307;&#x6570;&#x590D;&#x6742;&#x5EA6;&#x7684;&#x9012;&#x5F52;&#x7B97;&#x6CD5;&#x5B9E;&#x73B0;&#xFF1A;
+      public int Fibonacci(n) {
+          if (n == 1 || n == 2)
+              return 1;
+          if (n &gt; 2)
+              return Fibonacci(n-1) + Fibonacci(n-2);
+      }</p><p>&#x4E3A;&#x4EC0;&#x4E48;&#x662F;2^n^&#x5462;&#xFF1F;&#x56E0;&#x4E3A;&#x6BCF;&#x4E00;&#x6B21;&#x547C;&#x53EB;&#x9012;&#x5F52;&#x51FD;&#x6570;&#xFF0C;&#x90FD;&#x4F1A;&#x6253;&#x5F00;&#x65B0;&#x7684;&#x4E00;&#x5C42;&#x6808;&#x6862;&#xFF08;stack frame&#xFF09;&#xFF0C;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x5C42;&#x6570;&#x4E3A;n - 1&#x7684;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x4ECE;&#x6BCF;&#x4E00;&#x5C42;&#x6709;2^0^&#x9879;&#xFF0C;&#x5EF6;&#x5C55;&#x5230;&#x6BCF;&#x4E00;&#x5C42;&#x6709;2^n-1^&#x9879;&#xFF0C;2^0^ + ... + 2^n-1^&#x662F;2^n^-1&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x4E2A;&#x4E8C;&#x53C9;&#x6811;&#x4E0D;&#x662F;&#x5B8C;&#x5168;&#x7684;&#xFF0C;2^n^&#x53EA;&#x662F;&#x8D8B;&#x8FD1;&#x503C;&#x3002;</p></li>
+<li><p>O(n!)
+  &#x9636;&#x4E58;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x6CE8;&#x610F;&#x5B83;&#x6BD4;&#x6307;&#x6570;&#x590D;&#x6742;&#x5EA6;&#x66F4;&#x6162;&#xFF0C;&#x662F;&#x5E94;&#x5F53;&#x7EDD;&#x5BF9;&#x907F;&#x514D;&#x7684;&#x3002;
+  *Permutation</p></li></ul>
+<h3 id="&#x6570;&#x7EC4;&#x5404;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;">&#x6570;&#x7EC4;&#x5404;&#x64CD;&#x4F5C;&#x7684;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;</h3><p>&#x6709;&#x4E86;&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#x8FD9;&#x4E2A;&#x6B66;&#x5668;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x53EF;&#x4EE5;&#x6765;&#x770B;&#x770B;&#x6570;&#x7EC4;&#x7684;&#x5404;&#x79CD;&#x529F;&#x80FD;&#x64CD;&#x4F5C;&#x5177;&#x4F53;&#x7684;&#x5FEB;&#x6162;&#x7A0B;&#x5EA6;&#x4E86;&#x3002;</p><ol><li>locate: O(1)
+ &#x8FD9;&#x662F;&#x6570;&#x7EC4;&#x6700;&#x64C5;&#x957F;&#x7684;&#x64CD;&#x4F5C;&#xFF1A;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x987A;&#x5E8F;&#x7F16;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x9A6C;&#x4E0A;&#x8BBF;&#x95EE;&#x7F16;&#x7801;&#x5BF9;&#x5E94;&#x7684;&#x201C;&#x683C;&#x5B50;&#x201D;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x3002;&#x65E0;&#x8BBA;&#x6570;&#x636E;&#x96C6;&#x6709;&#x591A;&#x5927;&#xFF0C;&#x8FD9;&#x4E00;&#x64CD;&#x4F5C;&#x90FD;&#x662F;&#x56FA;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#x3002;
+</li>
+<li>insert/delete: O(N)
+ &#x76F8;&#x6BD4;&#x4E4B;&#x4E0B;&#xFF0C;&#x6570;&#x7EC4;&#x7684;&#x63D2;&#x5165;&#x548C;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x5C31;&#x6162;&#x4E86;&#x4E0D;&#x5C11;&#x3002;&#x8BD5;&#x60F3;&#x6211;&#x4EEC;&#x5728;&#x7B2C;2&#x548C;&#x7B2C;3&#x4E2A;&#x5143;&#x7D20;&#x4E4B;&#x95F4;&#xFF0C;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x7B2C;&#x4E09;&#x4E2A;&#x5143;&#x7D20;&#x4EE5;&#x540E;&#x7684;&#x5143;&#x7D20;&#x90FD;&#x8981;&#x540E;&#x79FB;&#x4E00;&#x4F4D;&#x3002;&#x5047;&#x5982;&#x6211;&#x4EEC;&#x5728;&#x6570;&#x7EC4;&#x5934;&#x90E8;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x90A3;&#x4E48;&#x5934;&#x90E8;&#x5230;&#x5C3E;&#x90E8;&#x6240;&#x6709;&#x5143;&#x7D20;&#x90FD;&#x8981;&#x540E;&#x79FB;&#x4E00;&#x4F4D;&#xFF0C;&#x8FD9;&#x79CD;&#x6700;&#x574F;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x8FD0;&#x884C;&#x590D;&#x6742;&#x5EA6;&#x4E3A;O(N)&#x3002;
+</li>
+<li>search: &#x5982;&#x679C;&#x6570;&#x7EC4;&#x672C;&#x8EAB;&#x6CA1;&#x6709;&#x6392;&#x5E8F;&#xFF0C;&#x5219;&#x4E3A;O(N)&#xFF0C;&#x56E0;&#x4E3A;&#x53EA;&#x80FD;&#x4F7F;&#x7528;Linear Search&#x7B97;&#x6CD5;&#x3002;&#x5982;&#x679C;&#x6570;&#x7EC4;&#x5DF2;&#x6392;&#x5E8F;&#xFF0C;&#x5219;&#x4E3A;O(log N)&#xFF0C;&#x56E0;&#x4E3A;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Binary Search&#x7B97;&#x6CD5;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x641C;&#x7D22;&#x7B97;&#x6CD5;&#xFF0C;&#x540E;&#x9762;&#x4F1A;&#x8BE6;&#x7EC6;&#x8BB2;&#x3002;
+</li>
+<li>iteration: O(N)&#xFF0C;&#x904D;&#x5386;&#x4E00;&#x904D;&#x6570;&#x636E;&#x80AF;&#x5B9A;&#x662F;O(N)&#xFF0C;&#x6240;&#x4EE5;&#x4EE5;&#x540E;&#x6211;&#x4EEC;&#x5C31;&#x4E0D;&#x518D;&#x8BA8;&#x8BBA;&#x904D;&#x5386;&#x7684;&#x590D;&#x6742;&#x5EA6;&#x4E86;&#x3002;
+</li></ol>
+<p>&#x3010;&#x8868;&#x3011;</p><h2 id="java&#x76F8;&#x5173;&#x65B9;&#x6CD5;">Java&#x76F8;&#x5173;&#x65B9;&#x6CD5;</h2><ol><li>&#x5B9A;&#x4F4D;&#xFF1A;&#x63D0;&#x53D6;arr[i]&#x5373;&#x53EF;&#x3002;
+</li>
+<li>&#x63D2;&#x5165;&#xFF1A;arr[i] = newElem&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x540E;&#x9762;&#x7684;&#x5143;&#x7D20;&#x987A;&#x5E8F;&#x540E;&#x79FB;//&#xFF0C;&#x6B64;&#x65F6;&#x6709;&#x53EF;&#x80FD;&#x6EA2;&#x51FA;&#xFF0C;&#x6839;&#x636E;&#x9700;&#x8981;&#x8BBE;&#x8BA1;&#x6B64;&#x65F6;&#x7684;&#x53CD;&#x5E94;&#xFF0C;&#x6BD4;&#x5982;&#x629B;&#x51FA;&#x5F02;&#x5E38;&#x3002;&#x5220;&#x9664;&#x7C7B;&#x4F3C;&#x3002;
+</li>
+<li><p>&#x590D;&#x5236;&#xFF1A;&#x6709;&#x4E09;&#x79CD;&#x65B9;&#x6CD5;&#xFF0C;&#x90FD;&#x662F;&#x6D45;&#x590D;&#x5236;&#xFF1A;</p><ul><li>Arrays.copyOf(AnyType[] arr, int len)
+</li>
+<li>System.arraycopy(AnyType[] ore, int start, AnyType[] dest, int end, it len)
+  &#x8FD9;&#x4E00;&#x65B9;&#x6CD5;&#x4F1A;&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x6570;&#x7EC4;&#xFF0C;&#x5360;&#x7528;&#x4E00;&#x5757;&#x65B0;&#x7684;&#x5185;&#x5B58;&#x3002;
+</li>
+<li>arr.clone()
+  &#x8FD9;&#x4E00;&#x65B9;&#x6CD5;&#x4E5F;&#x4F1A;&#x58F0;&#x660E;&#x65B0;&#x6570;&#x7EC4;&#x3002;
+</li></ul>
+</li>
+<li><p>&#x904D;&#x5386;&#xFF1A;&#x7528;for loop&#x5FAA;&#x73AF;&#x4E00;&#x904D;&#x5373;&#x53EF;&#x3002;</p></li>
+<li><p>&#x76F8;&#x7B49;&#xFF1A; &#x201C;==&#x201D;, Arrays.equals()&#x548C;Arrays.deepEquals()
+// Code
+&#x3010;&#x56FE;&#x3011;</p></li>
+<li>&#x5176;&#x4ED6;&#xFF1A;
+sort()&#xFF1A;&#x7528;&#x6765;&#x5BF9;array&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;
+binarySearch()&#xFF1A;&#x5728;&#x6392;&#x597D;&#x5E8F;&#x7684;array&#x4E2D;&#x5BFB;&#x627E;&#x5143;&#x7D20;&#x3002;
+System.arraycopy()&#xFF1A;array&#x7684;&#x590D;&#x5236;&#x3002;
+</li></ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../" class="navigation navigation-prev " aria-label="Previous page: Introduction">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="List.html" class="navigation navigation-next " aria-label="Next page: List">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Arrays","level":"1.1.1","depth":2,"next":{"title":"List","level":"1.1.2","depth":2,"path":"DS/List.md","ref":"DS/List.md","articles":[]},"previous":{"title":"Introduction","level":"1.1","depth":1,"path":"README.md","ref":"README.md","articles":[{"title":"Arrays","level":"1.1.1","depth":2,"path":"DS/Array.md","ref":"DS/Array.md","articles":[]},{"title":"List","level":"1.1.2","depth":2,"path":"DS/List.md","ref":"DS/List.md","articles":[]},{"title":"Stack","level":"1.1.3","depth":2,"path":"DS/Stack.md","ref":"DS/Stack.md","articles":[]},{"title":"Queue","level":"1.1.4","depth":2,"path":"DS/Queue.md","ref":"DS/Queue.md","articles":[]},{"title":"Tree","level":"1.1.5","depth":2,"path":"DS/Tree.md","ref":"DS/Tree.md","articles":[]},{"title":"Heap","level":"1.1.6","depth":2,"path":"DS/Heap.md","ref":"DS/Heap.md","articles":[]},{"title":"Map","level":"1.1.7","depth":2,"path":"DS/Map.md","ref":"DS/Map.md","articles":[]},{"title":"Set","level":"1.1.8","depth":2,"path":"DS/Set.md","ref":"DS/Set.md","articles":[]},{"title":"Search and Sort","level":"1.1.9","depth":2,"path":"DS/SearchSort.md","ref":"DS/SearchSort.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DS/Array.md","mtime":"2016-08-31T18:58:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T19:03:23.685Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

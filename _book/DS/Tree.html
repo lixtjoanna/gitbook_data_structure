@@ -1,0 +1,654 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Tree · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Heap.html" />
+    
+    
+    <link rel="prev" href="Queue.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Array.html">
+            
+                <a href="Array.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="List.html">
+            
+                <a href="List.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Stack.html">
+            
+                <a href="Stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="Queue.html">
+            
+                <a href="Queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.5" data-path="Tree.html">
+            
+                <a href="Tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="Heap.html">
+            
+                <a href="Heap.html">
+            
+                    
+                    Heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.7" data-path="Map.html">
+            
+                <a href="Map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="Set.html">
+            
+                <a href="Set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="SearchSort.html">
+            
+                <a href="SearchSort.html">
+            
+                    
+                    Search and Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Tree</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tree">Tree</h1><h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2><p>&#x4E0A;&#x4E00;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x8BA4;&#x8BC6;&#x4E86;&#x7EBF;&#x6027;&#x6570;&#x636E;&#x7ED3;&#x6784;List&#x3002;&#x6211;&#x4EEC;&#x628A;&#x5B83;&#x60F3;&#x8C61;&#x4E3A;&#x4E00;&#x4E9B;&#x7BB1;&#x5B50;&#xFF0C;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x53EF;&#x4EE5;&#x5C06;&#x8FD9;&#x4E9B;&#x7BB1;&#x5B50;&#x7EBF;&#x6027;&#x5730;&#x6392;&#x5217;&#x8D77;&#x6765;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x80FD;&#x591F;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x8BBF;&#x95EE;&#x3001;&#x641C;&#x7D22;&#x548C;&#x904D;&#x5386;&#x3002;
+&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x8BD5;&#x7740;&#x89E3;&#x7B54;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x3002;
+&#x4E2D;&#x534E;&#x6C11;&#x65CF;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x7740;&#x60A0;&#x4E45;&#x4F20;&#x7EDF;&#x7684;&#x6C11;&#x65CF;&#xFF0C;&#x8BB8;&#x591A;&#x540C;&#x5B66;&#x5BB6;&#x91CC;&#x90FD;&#x6709;&#x5BB6;&#x8C31;&#x3002;&#x6211;&#x5BB6;&#x662F;&#x660E;&#x4EE3;&#x5927;&#x69D0;&#x6811;&#x79FB;&#x6C11;&#xFF0C;&#x5C31;&#x662F;&#x6731;&#x5143;&#x748B;&#x65F6;&#x4ECE;&#x5C71;&#x897F;&#x8FC1;&#x79FB;&#x4E86;&#x4E00;&#x6279;&#x4EBA;&#x5230;&#x534E;&#x5317;&#x5E73;&#x539F;&#xFF0C;&#x6765;&#x8865;&#x5145;&#x6218;&#x4E71;&#x65F6;&#x635F;&#x5931;&#x7684;&#x4EBA;&#x53E3;&#x3002;&#x6211;&#x4EEC;&#x5BB6;&#x7684;&#x5BB6;&#x8C31;&#x5C31;&#x4ECE;&#x7B2C;&#x4E00;&#x4EE3;&#x79FB;&#x6C11;&#x5F00;&#x59CB;&#xFF0C;&#x6BCF;&#x4E2A;&#x7956;&#x5148;&#x6709;&#x51E0;&#x4E2A;&#x513F;&#x5B50;&#xFF0C;&#x4ED6;&#x4EEC;&#x7684;&#x513F;&#x5B50;&#x5206;&#x522B;&#x53C8;&#x6709;&#x51E0;&#x4E2A;&#x513F;&#x5B50;&#xFF0C;&#x90FD;&#x8BB0;&#x8F7D;&#x5728;&#x5BB6;&#x8C31;&#x4E0A;&#x3002;&#x56E0;&#x4E3A;&#x4E2D;&#x56FD;&#x53E4;&#x4EE3;&#x662F;&#x4E00;&#x4E2A;&#x7537;&#x6743;&#x793E;&#x4F1A;&#xFF0C;&#x6211;&#x4EEC;&#x7684;&#x5BB6;&#x8C31;&#x6B63;&#x6587;&#x53EA;&#x8BB0;&#x8F7D;&#x7236;&#x4EB2;&#x548C;&#x513F;&#x5B50;&#xFF0C;&#x800C;&#x6BCD;&#x4EB2;&#x548C;&#x5973;&#x513F;&#x5219;&#x662F;&#x4F5C;&#x4E3A;&#x9644;&#x6CE8;&#x548C;&#x9644;&#x5F55;&#x8BB0;&#x8F7D;&#x7684;&#xFF0C;&#x5F88;&#x591A;&#x5973;&#x6027;&#x7956;&#x5148;&#x90FD;&#x6CA1;&#x6709;&#x540D;&#x5B57;&#xFF0C;&#x53EA;&#x53EB;&#x201C;&#x5F20;&#x6C0F;&#x201D;&#x201C;&#x738B;&#x6C0F;&#x201D;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x73B0;&#x5728;&#x4FEE;&#x5BB6;&#x8C31;&#xFF0C;&#x80AF;&#x5B9A;&#x4E0D;&#x80FD;&#x91C7;&#x53D6;&#x8FD9;&#x6837;&#x5C01;&#x5EFA;&#x7684;&#x505A;&#x6CD5;&#x4E86;&#x3002;
+&#x90A3;&#x4E48;&#xFF0C;&#x5047;&#x5982;&#x6211;&#x4EEC;&#x624B;&#x91CC;&#x6709;&#x4E00;&#x672C;&#x5BB6;&#x8C31;&#xFF0C;&#x6211;&#x73B0;&#x5728;&#x60F3;&#x8981;&#x627E;&#x5230;&#x7B2C;15&#x4EE3;&#x4F20;&#x4EBA;&#x5C0F;&#x660E;&#x7684;&#x7237;&#x7237;&#x662F;&#x8C01;&#xFF0C;&#x6211;&#x5E94;&#x8BE5;&#x600E;&#x4E48;&#x627E;&#x5462;&#xFF1F;
+&#x4E00;&#x4E2A;&#x6700;&#x76F4;&#x89C2;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#xFF0C;&#x6211;&#x4EEC;&#x5148;&#x5F80;&#x56DE;&#x7FFB;&#x770B;&#x5C0F;&#x660E;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709;&#x8BB0;&#x8F7D;&#xFF0C;&#x770B;&#x770B;&#x662F;&#x8C01;&#x751F;&#x4E86;&#x5C0F;&#x660E;&#xFF0C;&#x5047;&#x5982;&#x8FD9;&#x4E2A;&#x4EBA;&#x53EB;&#x5927;&#x660E;&#xFF0C;&#x90A3;&#x4E48;&#x6211;&#x4EEC;&#x518D;&#x5F80;&#x56DE;&#x7FFB;&#xFF0C;&#x770B;&#x8C01;&#x751F;&#x4E86;&#x5927;&#x660E;&#xFF0C;&#x8FD9;&#x4E2A;&#x4EBA;&#x5C31;&#x662F;&#x5C0F;&#x660E;&#x7684;&#x7237;&#x7237;&#x3002;&#x3010;&#x56FE;&#x3011;</p><p>&#x4F46;&#x662F;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5F88;&#x4F4E;&#x6548;&#x3002;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8981;&#x68C0;&#x67E5;&#x5C0F;&#x660E;&#x6240;&#x6709;&#x7684;&#x7236;&#x8F88;&#xFF0C;&#x6BD4;&#x5982;&#x4ED6;&#x7684;&#x4F2F;&#x4F2F;&#x3001;&#x53D4;&#x53D4;&#x3002;&#x8FD8;&#x8981;&#x68C0;&#x67E5;&#x5927;&#x660E;&#x6240;&#x6709;&#x7684;&#x7236;&#x8F88;&#xFF0C;&#x624D;&#x80FD;&#x627E;&#x51FA;&#x5C0F;&#x660E;&#x7684;&#x7237;&#x7237;&#x6765;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x6BCF;&#x5929;&#x90FD;&#x8981;&#x627E;&#x5F88;&#x591A;&#x4EBA;&#x7684;&#x7956;&#x5148;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5C31;&#x975E;&#x5E38;&#x51CC;&#x4E71;&#x4E86;&#x3002;</p><p>&#x600E;&#x6837;&#x624D;&#x80FD;&#x66F4;&#x5FEB;&#x5730;&#x627E;&#x5230;&#x5C0F;&#x660E;&#x7237;&#x7237;&#x5462;&#xFF1F;</p><p>&#x8FD9;&#x79CD;&#x529E;&#x6CD5;&#x4F3C;&#x4E4E;&#x66F4;&#x597D;&#x4E9B;&#xFF1A;&#x6211;&#x4EEC;&#x9605;&#x8BFB;&#x4E00;&#x904D;&#x5BB6;&#x8C31;&#xFF0C;&#x628A;&#x5BB6;&#x8C31;&#x6240;&#x8BB0;&#x8F7D;&#x7684;&#x7236;&#x5B50;&#x4F20;&#x627F;&#x5173;&#x7CFB;&#xFF0C;&#x753B;&#x6210;&#x4E00;&#x5F20;&#x56FE;&#x3002;&#x8FD9;&#x5F20;&#x56FE;&#x4E0A;&#xFF0C;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x7528;&#x4E00;&#x4E2A;&#x5708;&#x6765;&#x8868;&#x793A;&#xFF0C;&#x800C;&#x4EBA;&#x4EEC;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x5219;&#x7528;&#x4E0A;&#x4E0B;&#x7EBF;&#x6765;&#x8868;&#x793A;&#x3002;&#x3010;&#x56FE;&#x3011;</p><p>&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x8FD9;&#x5F20;&#x56FE;&#x6709;&#x4EE5;&#x4E0B;&#x7684;&#x7279;&#x70B9;&#xFF1A;
+1. &#x6700;&#x9876;&#x7AEF;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x4EBA;&#xFF0C;&#x5BB6;&#x8C31;&#x6CA1;&#x6709;&#x8BB0;&#x8F7D;&#x4ED6;&#x7684;&#x7236;&#x4EB2;&#x662F;&#x8C01;&#xFF0C;&#x4ED6;&#x662F;&#x5BB6;&#x8C31;&#x7684;&#x5F00;&#x59CB;&#xFF0C;&#x662F;&#x6240;&#x6709;&#x4EBA;&#x7684;&#x59CB;&#x7956;&#x3002;
+2. &#x59CB;&#x7956;&#x4EE5;&#x4E0B;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x4EBA;&#x90FD;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x4EB2;&#xFF0C;&#x4E00;&#x4E2A;&#x4EBA;&#x53EF;&#x4EE5;&#x6709;&#x591A;&#x4E2A;&#x513F;&#x5B50;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x6CA1;&#x6709;&#x513F;&#x5B50;&#x3002;</p><p>&#x7136;&#x540E;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x8FD9;&#x5F20;&#x56FE;&#x4E0A;&#x627E;&#x5230;&#x5C0F;&#x660E;&#xFF0C;&#x987A;&#x7740;&#x4ED6;&#x4E0A;&#x9762;&#x7684;&#x8FDE;&#x7EBF;&#x627E;&#x5230;&#x4ED6;&#x7684;&#x7236;&#x4EB2;&#xFF0C;&#x518D;&#x987A;&#x7740;&#x4ED6;&#x7236;&#x4EB2;&#x7684;&#x8FDE;&#x7EBF;&#x627E;&#x5230;&#x4ED6;&#x7684;&#x7237;&#x7237;&#x3002;&#x56E0;&#x4E3A;&#x6BCF;&#x4E2A;&#x4EBA;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x4EB2;&#xFF0C;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x5F88;&#x8FC5;&#x901F;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x68C0;&#x7D22;&#x5176;&#x4ED6;&#x7236;&#x8F88;&#x3002;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x8FD9;&#x5F20;&#x56FE;&#xFF0C;&#x90A3;&#x4E48;&#x627E;&#x5230;&#x7237;&#x7237;&#x6240;&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4EC5;&#x4ED6;&#x4E0E;&#x7237;&#x7237;&#x4E4B;&#x95F4;&#x7684;&#x8F88;&#x5206;&#x5DEE;&#x5F02;&#x6709;&#x5173;&#x2014;&#x2014;&#x4E5F;&#x5C31;&#x662F;&#x4E24;&#x4EE3;&#x4EBA;&#x3002;&#x8FD9;&#x5C31;&#x5927;&#x5927;&#x7F29;&#x77ED;&#x4E86;&#x67E5;&#x8BE2;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x4FBF;&#x5229;&#x4E86;&#x591A;&#x6B21;&#x67E5;&#x8BE2;&#x3002;</p><p>&#x4E0A;&#x9762;&#x753B;&#x7684;&#x8FD9;&#x5F20;&#x56FE;&#xFF0C;&#x5C31;&#x53EB;&#x505A;&#x201C;&#x6811;&#x201D;&#x3002;&#x662F;&#x4E00;&#x79CD;&#x91CD;&#x8981;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x3002;&#x8FD0;&#x7528;&#x201C;&#x6811;&#x201D;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x9700;&#x8981;&#x4EE5;&#x4E0B;&#x4EE3;&#x7801;&#x5C31;&#x53EF;&#x4EE5;&#x627E;&#x5230;&#x5C0F;&#x660E;&#x7684;&#x7237;&#x7237;&#xFF1A;</p><pre><code>TreeNode grandfather = xiaoming.parent().parent();</code></pre>
+<h2 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h2><p><img src="http://typeocaml.com/content/images/2014/11/edge-1.jpg#small">
+&#x6811;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x548C;&#x4E0A;&#x56FE;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x662F;&#x4E00;&#x81F4;&#x7684;&#x3002;
+&#x6811;&#xFF0C;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF08;node&#xFF09;&#x7684;&#x96C6;&#x5408;&#xFF0C;&#x8FD9;&#x4E9B;&#x8282;&#x70B9;&#x7528;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x6765;&#x50A8;&#x5B58;&#x5143;&#x7D20;&#xFF0C;&#x7236;&#x5B50;&#x5173;&#x7CFB;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;&#xFF1A;
+1. &#x5982;&#x679C;&#x6811;&#x975E;&#x7A7A;&#xFF0C;&#x5219;&#x6709;&#x4E00;&#x4E2A;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5B83;&#x6CA1;&#x6709;&#x7236;&#x8282;&#x70B9;&#x3002;
+2. &#x6839;&#x8282;&#x70B9;&#x4EE5;&#x5916;&#x7684;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#xFF0C;&#x90FD;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x8282;&#x70B9;&#x3002;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x4E5F;&#x53EF;&#x80FD;&#x6CA1;&#x6709;&#x3002;</p><p>&#x6811;&#x6709;&#x4E00;&#x79CD;&#x66F4;&#x52A0;&#x6B63;&#x5F0F;&#x7684;&#x5B9A;&#x4E49;&#x65B9;&#x5F0F;&#xFF0C;&#x6D89;&#x53CA;&#x5230;&#x201D;&#x56FE;&#x201C;&#x548C;&#x201D;&#x73AF;&#x201C;&#x8FD9;&#x4E24;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x6211;&#x4EEC;&#x8FD9;&#x4E2A;&#x7B14;&#x8BB0;&#x4E0D;&#x4F1A;&#x6D89;&#x53CA;&#x201C;&#x56FE;&#x201D;&#x548C;&#x201C;&#x73AF;&#x201D;&#xFF0C;&#x6240;&#x4EE5;&#x6682;&#x65F6;&#x4E0D;&#x4ECB;&#x7ECD;&#x4E86;&#x3002;&#x6709;&#x5174;&#x8DA3;&#x7684;&#x670B;&#x53CB;&#x53EF;&#x4EE5;&#x53C2;&#x8003;&#x76F8;&#x5173;&#x7684;&#x6559;&#x79D1;&#x4E66;&#x6216;&#x7EF4;&#x57FA;&#x767E;&#x79D1;&#x3002;</p><p>&#x6811;&#x7684;&#x5404;&#x4E2A;&#x90E8;&#x5206;&#x90FD;&#x6709;&#x72EC;&#x7279;&#x7684;&#x540D;&#x79F0;&#xFF0C;&#x603B;&#x7ED3;&#x5982;&#x4E0B;&#xFF1A;
+<a href="http://typeocaml.com/2014/11/26/height-depth-and-level-of-a-tree/" target="_blank">Tree Concepts</a></p><ul><li>Root: The node at the top of the tree.  
+</li>
+<li>Parent: When any node (except the root) has exactly one edge running upward to another node. The node above is called parent of the node.  
+</li>
+<li>Child: Any node may have one or more lines running downward to other nodes. These nodes below the given node called its children.  
+</li>
+<li>Edge: connection between one node to another.
+</li>
+<li>Leaf: A node that has no children is called a leaf. There can be only one root in a tree but there can be many leaves. 
+</li>
+<li>Levels: the level of a particular node refers to how many generations the node is from the root. The root is level 0 and its children are level 1 and so on.  
+</li>
+<li>Height: The height of a tree is the number of edges on the longest downward path between the root and a leaf.
+</li>
+<li>Path: a sequence of nodes and edges connecting a node with a descendant.
+</li></ul>
+<p>&#x6839;&#x636E;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x6240;&#x80FD;&#x62E5;&#x6709;&#x7684;&#x6700;&#x5927;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x6570;&#x91CF;&#xFF0C;&#x6811;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4E8C;&#x53C9;&#x6811;&#x548C;&#x591A;&#x53C9;&#x6811;&#x4E24;&#x79CD;&#x3002;&#x4E8C;&#x53C9;&#x6811;&#x5C31;&#x662F;&#x4EFB;&#x4E00;&#x8282;&#x70B9;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x6709;&#x4E24;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x6811;&#xFF0C;&#x800C;&#x591A;&#x53C9;&#x6811;&#x5219;&#x662F;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x60C5;&#x51B5;&#x7684;&#x6811;&#x3002;</p><h2 id="&#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;">&#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;</h2><h3 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h3><p>&#x4E86;&#x89E3;&#x4E86;&#x6811;&#x7684;&#x5B9A;&#x4E49;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x7528;&#x6811;&#x89E3;&#x51B3;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x95EE;&#x9898;&#x3002;
+&#x770B;&#x5230;&#x4EE5;&#x4E0B;&#x7684;&#x6811;&#xFF0C;&#x6211;&#x4EEC;&#x600E;&#x6837;&#x624D;&#x80FD;&#x628A;&#x6570;&#x5B57;&#x6309;&#x7167;&#x4ECE;&#x5C0F;&#x5230;&#x5927;&#x7684;&#x987A;&#x5E8F;&#x6253;&#x5370;&#x51FA;&#x6765;&#xFF1F;
+<img src="http://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_tree.jpg">
+&#x8BA4;&#x771F;&#x89C2;&#x5BDF;&#x8FD9;&#x4E2A;&#x6811;&#xFF0C;&#x4F60;&#x4F1A;&#x53D1;&#x73B0;&#xFF0C;&#x53EA;&#x8981;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x628A;&#x8282;&#x70B9;&#x4E2D;&#x7684;&#x6570;&#x6253;&#x5370;&#x51FA;&#x6765;&#x5C31;&#x53EF;&#x4EE5;&#x4E86;&#x3002;</p><h3 id="&#x5B9A;&#x4E49;">&#x5B9A;&#x4E49;</h3><p>&#x8FD9;&#x6837;&#x7684;&#x80FD;&#x591F;&#x81EA;&#x52A8;&#x7ED9;&#x5143;&#x7D20;&#x6392;&#x5E8F;&#x7684;&#x6811;&#xFF0C;&#x5C31;&#x53EB;&#x505A;&#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;&#x3002;&#x5B83;&#x6EE1;&#x8DB3;&#x4EE5;&#x4E0B;&#x6761;&#x4EF6;&#xFF1A;
+1. &#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5143;&#x7D20;&#x5C0F;&#xFF0C;&#x6216;&#x4E0E;&#x5B83;&#x76F8;&#x7B49;&#x3002;
+2. &#x6BCF;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x5B50;&#x6811;&#x4E2D;&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x6BD4;&#x8FD9;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x5143;&#x7D20;&#x5927;&#xFF0C;&#x6216;&#x4E0E;&#x5B83;&#x76F8;&#x7B49;&#x3002;
+&#x8FD9;&#x79CD;&#x6811;&#x6700;&#x5927;&#x7684;&#x4F5C;&#x7528;&#xFF0C;&#x5C31;&#x662F;&#x53EF;&#x4EE5;&#x4FDD;&#x6301;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x662F;&#x4E00;&#x4E2A;&#x6392;&#x8FC7;&#x5E8F;&#x7684;list&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5B83;&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x6216;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53C8;&#x6BD4;&#x6392;&#x5E8F;&#x7684;list&#x66F4;&#x5FEB;&#x6377;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7EF4;&#x62A4;&#x5143;&#x7D20;&#x987A;&#x5E8F;&#x6216;&#x5BF9;&#x5143;&#x7D20;&#x6392;&#x5E8F;&#x65F6;&#xFF0C;&#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;&#x7ED3;&#x6784;&#x5C31;&#x975E;&#x5E38;&#x9002;&#x7528;&#x3002;&#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;&#x662F;&#x9762;&#x8BD5;&#x4E2D;&#x975E;&#x5E38;&#x5E38;&#x89C1;&#x7684;&#x4E00;&#x79CD;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x503C;&#x5F97;&#x6DF1;&#x5165;&#x7684;&#x63A2;&#x8BA8;&#x3002;</p><h3 id="&#x529F;&#x80FD;&#x3001;&#x65B9;&#x6CD5;&#x53CA;&#x590D;&#x6742;&#x5EA6;">&#x529F;&#x80FD;&#x3001;&#x65B9;&#x6CD5;&#x53CA;&#x590D;&#x6742;&#x5EA6;</h3><p>&#x7531;&#x4E8E;&#x72EC;&#x7279;&#x7684;&#x6027;&#x8D28;&#xFF0C;BST&#x53EF;&#x4EE5;&#x8FDB;&#x884C;&#x4E00;&#x7CFB;&#x5217;&#x590D;&#x6742;&#x5EA6;&#x8F83;&#x4F4E;&#x7684;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x3002;
+1. Searching
+    O(log N)&#xFF0C;&#x548C;binarySearch&#x539F;&#x7406;&#x7C7B;&#x4F3C;&#xFF08;&#x90FD;&#x6709;order&#x6240;&#x4EE5;&#x90FD;&#x53EF;&#x4EE5;&#x641C;&#x4E00;&#x6B21;&#x622A;&#x53D6;&#x4E00;&#x534A;&#xFF09;&#x3002;
+    &#x5982;&#x679C;&#x6811;&#x662F;&#x4E00;&#x4E2A;&#x94FE;&#x6761;&#xFF0C;&#x5C31;&#x6210;&#x4E86;O(N)&#x3002;&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;</p><pre><code>####&#x5E73;&#x8861;&#x6811;
+&#x6811;&#x5728;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x548C;LinkedList&#x5E76;&#x6CA1;&#x6709;&#x533A;&#x522B;&#xFF0C;&#x8981;&#x63D2;&#x5165;&#x4E00;&#x4E2A;&#x65B0;&#x5143;&#x7D20;&#x5230;&#x6B63;&#x786E;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x5982;&#x679C;&#x4E8B;&#x5148;&#x4E0D;&#x77E5;&#x9053;&#x4F4D;&#x7F6E;&#x7684;&#x8BDD;&#xFF0C;&#x63D2;&#x5165;&#x6548;&#x7387;&#x5C31;&#x662F;O(N)&#x3010;&#x56FE;&#x3011;&#x3002;
+&#x4E5F;&#x53EF;&#x4EE5;&#x8BF4;&#xFF0C;LinkedList&#x662F;&#x6811;&#x7684;&#x4E00;&#x79CD;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#xFF0C;&#x5373;&#x6BCF;&#x4E2A;&#x975E;&#x6839;&#x3001;&#x975E;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x90FD;&#x6709;&#x4E14;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x6B64;&#x65F6;&#x8282;&#x70B9;&#x5F62;&#x6210;&#x4E00;&#x6761;&#x94FE;&#x6761;&#xFF0C;&#x548C;LinkedList&#x4E00;&#x6A21;&#x4E00;&#x6837;&#x3002;
+&#x8FD9;&#x79CD;&#x6837;&#x5B50;&#x7684;&#x6811;&#x4E5F;&#x6EE1;&#x8DB3;BST&#x7684;&#x6761;&#x4EF6;&#xFF0C;&#x4F46;&#x548C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;BST&#x5927;&#x76F8;&#x5F84;&#x5EAD;&#x3002;
+&#x7531;&#x6B64;&#x6211;&#x4EEC;&#x53D1;&#x73B0;&#xFF0C;&#x6811;&#x64CD;&#x4F5C;&#x7684;&#x590D;&#x6742;&#x5EA6;&#xFF0C;&#x548C;&#x8FD9;&#x68F5;&#x6811;&#x5904;&#x4E8E;&#x4EC0;&#x4E48;&#x72B6;&#x6001;&#xFF0C;&#x6709;&#x5F88;&#x5927;&#x7684;&#x5173;&#x8054;&#x3002;&#x6811;&#x7ED3;&#x6784;&#x8D8A;&#x63A5;&#x8FD1;&#x4E8E;&#x4E00;&#x4E2A;&#x94FE;&#x6761;&#xFF0C;&#x5404;&#x64CD;&#x4F5C;&#x5C31;&#x8D8A;&#x50CF;&#x7EBF;&#x6027;&#x7ED3;&#x6784;&#xFF0C;&#x5C31;&#x8D8A;&#x5931;&#x53BB;&#x4E86;&#x6811;&#x7ED3;&#x6784;&#x72EC;&#x7279;&#x7684;&#x4F18;&#x52BF;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x5982;&#x4F55;&#x5B9A;&#x4E49;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x5462;&#xFF1F;&#x6211;&#x4EEC;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x201C;&#x5E73;&#x8861;&#x6811;&#x201D;&#x7684;&#x6982;&#x5FF5;&#x3002;&#x5F53;&#x4E00;&#x68F5;&#x6811;&#x7236;&#x8282;&#x70B9;&#x7684;&#x5DE6;&#x5B50;&#x6811;&#x548C;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x9AD8;&#x5EA6;&#x4E4B;&#x5DEE;&#x4E0D;&#x5927;&#x4E8E;1&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x5176;&#x79F0;&#x4E3A;&#x201C;&#x5E73;&#x8861;&#x6811;&#x201D;&#x3002;&#x201C;&#x5E73;&#x8861;&#x6811;&#x201D;&#x7684;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x4FDD;&#x5B58;&#x4E86;&#x6811;&#x7ED3;&#x6784;&#x7684;&#x7279;&#x70B9;&#xFF0C;&#x89C4;&#x907F;&#x4E86;&#x7EBF;&#x6027;&#x7ED3;&#x6784;&#x7684;&#x95EE;&#x9898;&#x3002;
+&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5728;&#x4F7F;&#x7528;&#x6811;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#x7EF4;&#x62A4;&#x5176;&#x5E73;&#x8861;&#x3002;&#x7EF4;&#x62A4;&#x6811;&#x5E73;&#x8861;&#x7684;&#x65B9;&#x6CD5;&#x6709;&#x8BB8;&#x591A;&#xFF0C;AVL&#x662F;&#x4E00;&#x79CD;&#x8F83;&#x4E3A;&#x5E38;&#x7528;&#x7684;&#x81EA;&#x5E73;&#x8861;&#x4E8C;&#x53C9;&#x67E5;&#x627E;&#x6811;&#x3002;&#x5F53;AVL&#x6811;&#x68C0;&#x6D4B;&#x5230;&#x4E0D;&#x5E73;&#x8861;&#x7684;&#x60C5;&#x51B5;&#x51FA;&#x73B0;&#xFF0C;&#x5B83;&#x4F1A;&#x65CB;&#x8F6C;&#x6811;&#x8282;&#x70B9;&#xFF0C;&#x4F7F;&#x5F97;&#x6811;&#x91CD;&#x65B0;&#x5E73;&#x8861;&#x3002;</code></pre>
+<ol><li>Insertion
+ &#x5E73;&#x5747;&#x60C5;&#x51B5;&#x4E0B;O(log N)&#xFF0C;&#x7528;&#x7C7B;&#x4F3C;binarySearch&#x7684;&#x65B9;&#x5F0F;&#x627E;&#x5230;&#x548C;&#x65B0;&#x5143;&#x7D20;&#x6700;&#x63A5;&#x8FD1;&#x7684;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x3002;
+ &#x6709;&#x4E09;&#x79CD;&#x53EF;&#x80FD;&#xFF1A;&#x91CD;&#x590D;&#xFF08;&#x4E0D;&#x505A;&#x4EFB;&#x4F55;&#x4E8B;&#x7ED3;&#x675F;&#xFF09;&#xFF0C;&#x5DE6;&#x6811;&#x627E;&#x5230;SPOT&#xFF0C;&#x53F3;&#x6811;&#x627E;&#x5230;SPOT&#x3002;&#x56E0;&#x4E3A;&#x4E00;&#x6B21;cut&#x6389;&#x4E00;&#x534A;&#xFF0C;&#x6545;&#x662F;O(log N)&#x3002;
+ &#x4E8C;&#x53C9;&#x641C;&#x7D22;&#x6811;&#x8FDB;&#x884C;&#x63D2;&#x5165;&#x6216;&#x5220;&#x9664;&#x64CD;&#x4F5C;&#xFF0C;&#x5728;&#x5927;&#x90E8;&#x5206;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6BD4;&#x6392;&#x5E8F;&#x7684;list&#x66F4;&#x5FEB;&#x6377;&#x3002;
+</li>
+<li><p>Deletion
+ &#x5E73;&#x5747;&#x60C5;&#x51B5;O(log N)&#x518D;&#x591A;&#x4E00;&#x4E9B;&#x3002;&#x5148;&#x641C;&#x7D22;&#x5230;&#x5143;&#x7D20;&#x82B1;O(log N)&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x627E;&#x5230;&#x5C31;end&#xFF0C;&#x5982;&#x679C;&#x627E;&#x5230;&#xFF0C;&#x5206;&#x56DB;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;&#x540C;&#x65F6;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x5143;&#x7D20;&#x662F;&#x5176;parent&#x7684;&#x5DE6;&#x5B69;&#x5B50;&#x8FD8;&#x662F;&#x53F3;&#x5B69;&#x5B50;&#x3002;</p><ul><li>&#x5143;&#x7D20;&#x662F;leaf
+  parent&#x5BF9;&#x5E94;&#x6307;&#x9488;&#x6307;&#x5230;null&#x3002;
+</li>
+<li>&#x5143;&#x7D20;&#x4EC5;&#x6709;&#x5DE6;&#x8FB9;child
+  parent&#x5BF9;&#x5E94;&#x6307;&#x9488;&#x6307;&#x5230;&#x5DE6;child&#xFF0C;&#x5143;&#x7D20;&#x7684;&#x6307;&#x9488;&#x5168;&#x90E8;&#x5220;&#x9664;&#x3002;
+</li>
+<li>&#x5143;&#x7D20;&#x4EC5;&#x6709;&#x53F3;&#x8FB9;child
+parent&#x5BF9;&#x5E94;&#x6307;&#x9488;&#x6307;&#x5230;&#x53F3;child&#xFF0C;&#x5143;&#x7D20;&#x7684;&#x6307;&#x9488;&#x5168;&#x90E8;&#x5220;&#x9664;&#x3002;
+</li>
+<li><p>&#x5143;&#x7D20;&#x6709;&#x5DE6;&#x53F3;&#x4E24;&#x4E2A;children
+  &#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x6700;&#x4E3A;&#x590D;&#x6742;&#xFF0C;&#x9700;&#x8981;&#x627E;successor&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x4E2D;&#x6700;&#x5C0F;&#x7684;&#x5143;&#x7D20;&#x3002;&#x4ECE;&#x8981;&#x5220;&#x9664;&#x7684;&#x5143;&#x7D20;&#x5F80;&#x4E0B;&#x4E00;&#x8DEF;&#x5411;&#x5DE6;&#xFF0C;&#x627E;&#x5230;&#x6700;&#x5DE6;&#x5143;&#x7D20;&#xFF0C;&#x5B9A;&#x4E3A;successor&#xFF0C;&#x7136;&#x540E;&#x505A;&#x4E24;&#x4EF6;&#x4E8B;&#xFF1A;</p><ul><li>successor&#x5982;&#x679C;&#x6709;&#x53F3;&#x6811;&#xFF0C;&#x5C06;&#x5176;&#x8FDE;&#x5230;&#x5176;parent&#x7684;&#x5DE6;&#x6811;&#x4E0A;&#x3002;
+</li>
+<li>successor&#x65B0;&#x7684;&#x53F3;&#x6811;&#xFF0C;&#x8FDE;&#x5230;&#x88AB;&#x5220;&#x9664;&#x5143;&#x7D20;&#x7684;&#x53F3;&#x6811;&#x4E0A;&#x3002;
+</li></ul>
+<p>&#x82B1;&#x8D39;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x9664;&#x4E86;&#x641C;&#x7D22;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x6709;&#x627E;successor&#x4EE5;&#x53CA;&#x56FA;&#x5B9A;&#x7684;relink&#x65F6;&#x95F4;&#x3002;</p></li></ul>
+</li></ol>
+<ol><li>Traversal 
+ &#x6811;&#x5C24;&#x5176;&#x662F;&#x4E8C;&#x53C9;&#x6811;&#x3001;BST&#x7684;&#x904D;&#x5386;&#xFF0C;&#x662F;&#x4E00;&#x79CD;&#x6781;&#x5176;&#x91CD;&#x8981;&#x548C;&#x5E38;&#x89C1;&#x7684;&#x64CD;&#x4F5C;&#x3002;&#x6211;&#x4EEC;&#x4E0A;&#x9762;&#x6240;&#x51FA;&#x7684;&#x9898;&#x76EE;&#xFF0C;&#x4E4B;&#x6240;&#x4EE5;&#x80FD;&#x591F;&#x5B9E;&#x73B0;&#x987A;&#x5E8F;&#x6253;&#x5370;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x9760;&#x7684;&#x6B63;&#x662F;&#x4E00;&#x79CD;&#x4E8C;&#x53C9;&#x6811;&#x904D;&#x5386;&#x7684;&#x65B9;&#x6CD5;&#xFF1A;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;&#x4E2D;&#x7684;&#x4E2D;&#x6839;&#x904D;&#x5386;&#x3002;
+ &#x6811;&#x904D;&#x5386;&#x6709;&#x4E24;&#x79CD;&#x65B9;&#x6CD5;&#xFF1A;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;&#x548C;&#x5E7F;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;&#xFF0C;&#x5176;&#x4E2D;&#x6DF1;&#x5EA6;&#x4F18;&#x5148;&#x904D;&#x5386;&#x53C8;&#x5206;&#x4E3A;&#x5148;&#x6839;&#x3001;&#x540E;&#x6839;&#x548C;&#x4E2D;&#x6839;&#x904D;&#x5386;&#x3002;
+ &#x4E0B;&#x9762;&#x4ECB;&#x7ECD;&#x904D;&#x5386;&#x65B9;&#x6CD5;&#x3002;
+<ul><li>Depth First
+&#x201C;&#x5148;&#x987A;&#x5B8C;&#x4E00;&#x4E2A;&#x6839;&#x987B;&#xFF0C;&#x518D;&#x987A;&#x5176;&#x4ED6;&#x6839;&#x987B;&#x201D;&#xFF0C;&#x548C;breadth first&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x63A8;&#x8FDB;&#x7684;&#x987A;&#x5E8F;&#x76F8;&#x5BF9;&#x3002;&#x6CE8;&#x610F;&#x987A;&#x5B8C;&#x4E00;&#x4E2A;&#x5F80;&#x56DE;&#x5012;&#x7684;&#x65F6;&#x5019;&#x662F;&#x4ECE;&#x4E0B;&#x5F80;&#x4E0A;&#x5012;&#x7684;&#x3002;
+&#x6839;&#x636E;parent&#x548C;child&#x7684;visit&#x987A;&#x5E8F;&#xFF0C;&#x5206;&#x4E3A;Pre/Post/In-order&#xFF0C;&#x5C31;&#x662F;&#x6307;&#x5148;visit&#x6839;&#x8282;&#x70B9;&#x8FD8;&#x662F;&#x5176;children&#x3002;
+Pre&#x5C31;&#x662F;&#x5148;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x540E;children&#xFF1B;In&#x5C31;&#x662F;&#x5DE6;&#x8FB9;children-&#x6839;&#x8282;&#x70B9;-&#x53F3;&#x8FB9;children&#x3002;
+&#x6240;&#x6709;&#x8282;&#x70B9;&#x90FD;&#x88AB;visit&#x4E86;&#x4E00;&#x904D;&#xFF0C;&#x6240;&#x4EE5;&#x662F;O(n)&#x3002;
+</li>
+<li>Breadth First
+&#x4F18;&#x5148;&#x904D;&#x5386;&#x5B8C;&#x540C;&#x5C42;&#x3002;
+&#x7528;&#x4E00;&#x4E2A;queue&#x7ED3;&#x6784;&#xFF0C;&#x5148;dequeue&#x6839;&#x8282;&#x70B9;q&#xFF0C;&#x6309;&#x7167;&#x5C42;&#x5E8F;enqueue&#x5176;children&#xFF0C;visit(q)&#x7136;&#x540E;dequeue&#x9876;&#x90E8;&#x65B0;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x7EE7;&#x7EED;enqueue&#x3002;&#x91CD;&#x590D;&#x5230;dequeue&#x7A7A;&#x4E3A;&#x6B62;&#x3002;&#x6CE8;&#x610F;&#x4E2D;&#x95F4;queue&#x7684;&#x5F62;&#x6001;&#x3002;
+&#x6240;&#x6709;&#x7684;Node&#x90FD;&#x4F1A;&#x88AB;enqueue&#x548C;dequeue&#x5404;&#x4E00;&#x904D;&#xFF0C;&#x6240;&#x4EE5;&#x590D;&#x6742;&#x5EA6;&#x662F;O(2n)&#x5373;O(n)&#x3002;
+</li></ul>
+</li></ol>
+<h5 id="pre-order">Pre-Order</h5><pre><code>Algorithm preOrder(Node root) {
+    visit(root);
+    for every child (c) of root {
+        preOrder(c);
+    }
+}</code></pre>
+<h5 id="post-order">Post-Order</h5><pre><code>Algorithm postOrder(Node root) {
+    for every child (c) of root {
+        postOrder(c);
+    }
+    visit(root);
+}</code></pre>
+<h5 id="in-order">In-Order</h5><pre><code>Algorithm inOrder(Node root) {
+    for every left child (c) of root {
+        inOrder(c);
+    }
+    visit(root);
+    for every right child (c) of root {
+        inOrder(c);
+    }
+}</code></pre>
+<h5 id="breadth-first">Breadth-First</h5><p>&#x3010;&#x56FE;&#x3011;
+    Algorithm breadthFirst(Node root) {
+        Initialize queue Q to contain root;
+        while Q is not empty {
+            q = Q.dequeue();
+            visit(q);
+            for every child of q (c) {
+                Q.enqueue(c);
+            }
+        }
+    }
+    &#x6211;&#x4EEC;&#x5C06;&#x5728;&#x4E0B;&#x4E00;&#x8282;&#x4E2D;&#x5177;&#x4F53;&#x4ECB;&#x7ECD;&#x8FD9;&#x4E9B;&#x904D;&#x5386;&#x65B9;&#x6CD5;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;&#x3002;</p><pre><code>================================================
+
+&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x5E94;&#x7684;java&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;&#x3010;&#x5BF9;&#x5E94;&#x7684;java&#x5E93;&#x662F;&#x54EA;&#x4E2A;&#xFF1F; &#x3011;
+- boolean find(int key)
+- void insert(int key, double value)
+- void delete(int key)
+- Iterator iterator()
+
+&#x4E0B;&#x9762;&#xFF0C;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x770B;&#x8FD9;&#x4E9B;&#x57FA;&#x672C;&#x64CD;&#x4F5C;&#x7684;&#x5B9E;&#x73B0;&#x3002;</code></pre>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3><ol><li><p>TreeNode&#x5D4C;&#x5957;&#x7C7B;
+     // private static nested Node class
+     private static class Node {
+         int key;
+         double value;
+         Node left, right;</p><pre><code>     Node(int key, double value) {
+         this.key = key;
+         this.value = value;
+         left = right = null;
+     }
+ }</code></pre>
+<ol><li>boolean find(int key)
+  public boolean find(int key) {
+<pre><code>  if \(root == null\)
+      return false; \/\/ tree is empty
+  Node curr = root;</code></pre>
+</li></ol>
+<pre><code>     // while not found
+     while (curr.key != key) {
+         if (curr.key &lt; key) // go right
+             curr = curr.right;
+         else
+             // go left
+             curr = curr.left;
+         if (curr == null) // not found
+             return false;
+     }
+     return true; // found
+ }</code></pre>
+<ol><li>void insert(int key, double value)
+&#x6CE8;&#x610F;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x4E00;&#x4E2A;parent&#xFF0C;&#x8FD9;&#x6837;&#x627E;&#x5230;spot&#x4EE5;&#x540E;&#xFF0C;&#x53EF;&#x4EE5;&#x4FDD;&#x5B58;&#x5176;&#x7236;&#x8282;&#x70B9;&#x7684;&#x6307;&#x9488;&#x3002;
+  public void insert(int key, double value) {
+<pre><code>  Node newNode = new Node\(key, value\);
+  if \(root == null\) \/\/ empty tree
+      root = newNode;
+  else {
+      Node parent = root; \/\/ keep track of parent
+      Node curr = root;</code></pre>
+</li></ol>
+<pre><code>         while (true) {
+             // no duplicates allowed
+             if (key == curr.key)
+                 return;
+             parent = curr;
+
+             if (key &lt; curr.key) { // go left
+                 curr = curr.left;
+                 if (curr == null) { // found a spot
+                     parent.left = newNode;
+                     return;
+                 }
+             } else { // go right
+                 curr = curr.right;
+                 if (curr == null) { // found a spot
+                     parent.right = newNode;
+                     return;
+                 }
+             } // end of if-else to go right or left
+         } // end of while
+     } // end of if-else to check empty BST or not
+ } // end of insert method</code></pre>
+<ol><li>void delete(int key)
+  public void delete(int key) {
+<pre><code>      \/\/ the tree is empty
+      if \(root == null\)
+          return;</code></pre>
+</li></ol>
+<pre><code>         Node curr = root;
+         Node parent = root;
+         boolean isLeftChild = true; // flag to check left child
+
+         while (curr.key != key) {
+             parent = curr;
+             if (key &lt; curr.key) { // go left
+                 isLeftChild = true;
+                 curr = curr.left;
+             } else {
+                 isLeftChild = false;
+                 curr = curr.right;
+             }
+
+             if (curr == null) // case 1: not found
+                 return;
+         }
+
+         if (curr.left == null &amp;&amp; curr.right == null) { // case 2: leaf
+             if (curr == root)
+                 root = null;
+             else if (isLeftChild)
+                 parent.left = null;
+             else
+                 parent.right = null;
+         } else if (curr.right == null) { // case 3: no right child
+             if (curr == root)
+                 root = curr.left;
+             else if (isLeftChild)
+                 parent.left = curr.left;
+             else
+                 parent.right = curr.left;
+         } else if (curr.left == null) { // case 3: no left child
+             if (curr == root)
+                 root = curr.right;
+             else if (isLeftChild)
+                 parent.left = curr.right;
+             else
+                 parent.right = curr.right;
+         } else { // case 4: with two children HARDEST!
+             Node successor = getSuccessor(curr);
+
+             if (curr == root)
+                 root = successor;
+             else if (isLeftChild)
+                 parent.left = successor;
+             else
+                 parent.right = successor;
+
+             // need to take care of final connection with curr&apos;s left
+             successor.left = curr.left;
+         }
+     }</code></pre>
+<p>getSuccessor():&#x627E;&#x5230;&#x67D0;&#x8282;&#x70B9;&#x4E0B;&#x65B9;&#x7684;&#x4E0B;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF08;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#xFF09;&#x3002;&#x662F;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x6700;&#x5DE6;&#x5B50;&#x6811;&#x3002;&#x6CE8;&#x610F;&#x8FD9;&#x91CC;&#x8BF4;&#x7684;successor&#x4E0D;&#x542B;&#x4E0A;&#x9762;&#x7684;&#xFF0C;&#x56E0;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x4E0D;&#x4F1A;&#x6709;&#x4E0A;&#x9762;&#x662F;successor&#x7684;&#x60C5;&#x51B5;&#x3002;
+         private Node getSuccessor(Node keyNode) {
+             Node successorParent = keyNode;
+             Node successor = keyNode;
+             Node curr = keyNode.right;</p><pre><code>         // move to left as far as possible in the right subtree
+         while (curr != null) {
+             successorParent = successor;
+             successor = curr;
+             curr = curr.left;
+         }
+
+         /*
+          * if successor is not the right child of the node to be deleted Then
+          * need to take care of two connections in the right subtree
+          */
+         if (successor != keyNode.right) {
+             successorParent.left = successor.right; // link the right subtree of successor to its parent on the left
+             successor.right = keyNode.right; // the right tree of the deleted node
+         }
+
+         return successor;
+     }</code></pre>
+<ol><li><p>Iterator iterator()</p></li>
+<li><p>&#x65B9;&#x6CD5;&#xFF1A;&#x975E;&#x9012;&#x5F52;&#x7684;dfs&#xFF0C;&#x8981;&#x4FDD;&#x5B58;&#x904D;&#x5386;&#x7684;&#x4F4D;&#x7F6E;&#xFF0C;&#x8FD9;&#x91CC;&#x7528;&#x6808;&#x3002;</p></li>
+<li><p>&#x4E3A;&#x4EC0;&#x4E48;&#xFF1F;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x8D70;&#x8FF7;&#x5BAB;&#xFF0C;&#x987A;&#x5E8F;&#x662F;&#x6307;&#x5B9A;&#x987A;&#x5E8F;&#xFF08;&#x4E00;&#x822C;&#x662F;&#x4E2D;&#x5E8F;&#xFF09;&#xFF0C;&#x90A3;&#x4E48;&#x6BCF;&#x6B21;&#x8D70;&#x5B8C;&#x5DE6;&#x6B7B;&#x89D2;&#xFF0C;&#x9700;&#x8981;&#x80FD;&#x591F;&#x56DE;&#x6765;&#xFF0C;&#x8D70;&#x53F3;&#x8FB9;&#x7684;&#x90A3;&#x4E2A;&#x6B7B;&#x89D2;&#x3002;stack&#x8BB0;&#x5F55;&#x4E86;&#x8D70;&#x7684;&#x8DEF;&#x5F84;&#xFF0C;&#x56DE;&#x5230;&#x5176;top&#x7684;&#x5143;&#x7D20;&#xFF0C;&#x5C31;&#x662F;&#x4E0A;&#x4E00;&#x4E2A;&#x5206;&#x53C9;&#x53E3;&#x7684;&#x8BB0;&#x53F7;&#x3002;</p><pre><code>  public class BSTIterator {
+      TreeNode curr;
+      Stack&lt;TreeNode&gt; stack = new Stack&lt;TreeNode&gt;();
+
+      public BSTIterator(TreeNode root) {
+          curr = root;
+      }
+
+      /** @return whether we have a next smallest number */
+      public boolean hasNext() {
+          return (curr != null) || (!stack.isEmpty());
+      }
+
+      /** @return the next smallest number */
+      public int next() {
+          while (curr != null) {
+              stack.push(curr);
+              curr = curr.left;
+          }
+
+          TreeNode node = stack.pop();
+          curr = node.right;
+
+          return node.val;
+      }
+  }</code></pre>
+</li></ol>
+</li></ol>
+<p>&#x4E3A;&#x4EC0;&#x4E48;&#x7528;stack&#xFF1F;&#x60F3;&#x8C61;&#x4E00;&#x4E0B;&#x4E8C;&#x53C9;&#x6811;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x538B;&#x5E73;&#x5B83;&#xFF0C;&#x4E00;&#x4E2A;node&#x7684;&#x5DE6;&#x8FB9;&#x548C;&#x53F3;&#x8FB9;&#xFF0C;&#x51B3;&#x5B9A;&#x4E86;iteration&#x80FD;&#x6349;&#x5230;&#x7684;&#x90E8;&#x5206;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x5F97;&#x627E;&#x4E00;&#x4E2A;node&#x7684;&#x524D;&#x8FB9;&#x548C;&#x540E;&#x8FB9;&#xFF0C;previous&#x548C;next&#xFF08;&#x6240;&#x8C13;successor&#x5C31;&#x662F;next&#xFF09;&#x3002;&#x90A3;&#x4E48;&#xFF0C;&#x600E;&#x4E48;&#x627E;&#x4E00;&#x4E2A;node&#x7684;&#x524D;&#x8FB9;&#x548C;&#x540E;&#x8FB9;&#xFF1F;&#x5176;&#x5B9E;&#x53EA;&#x6709;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#x3002;&#x6211;&#x4EEC;&#x4EE5;&#x540E;&#x8FB9;next&#x5143;&#x7D20;&#x4E3A;&#x4F8B;&#x3002;&#x4E00;&#x4E2A;node&#x7684;next&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x5176;&#x53F3;&#x5B50;&#x6811;&#x7684;&#x6700;&#x5DE6;&#x7AEF;&#xFF0C;&#x8981;&#x4E48;&#x662F;&#x5176;ancestor&#x4E2D;&#x7B2C;&#x4E00;&#x4E2A;&#x5904;&#x4E8E;&#x5B83;&#x53F3;&#x8FB9;&#x7684;&#x3002;&#x524D;&#x8005;&#x6BD4;&#x8F83;&#x597D;&#x627E;&#xFF0C;&#x4F46;&#x540E;&#x8005;&#x4E0D;&#x597D;&#x8BB0;&#x5F55;&#xFF0C;&#x8FD9;&#x5C31;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x6211;&#x4EEC;&#x8981;&#x7528;&#x6808;&#x6765;&#x8BB0;&#x5F55;&#x4E4B;&#x3002;
+&#x6808;&#x5230;&#x5E95;&#x8BB0;&#x5F55;&#x4E86;&#x4EC0;&#x4E48;&#xFF1F;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x7684;&#x53F3;&#x7236;&#x8F88;&#x3002;
+&#x4E3A;&#x4EC0;&#x4E48;&#x662F;O(1)&#xFF1F;&#x5747;&#x644A;&#x5206;&#x6790;&#x3002;</p><p><a href="http://blog.csdn.net/luckyxiaoqiang/article/details/7518888" target="_blank">&#x4E8C;&#x53C9;&#x6811;&#x9898;&#x76EE;&#x603B;&#x7ED3;</a></p><h3 id="&#x591A;&#x53C9;&#x6811;">&#x591A;&#x53C9;&#x6811;</h3><h2 id="&#x95EE;&#x9898;">&#x95EE;&#x9898;</h2><ol><li>&#x6811;&#x548C;divide and conquer&#x4E0D;&#x4E00;&#x6837;&#xFF0C;&#x540E;&#x8005;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x662F;&#x6BCF;&#x4E00;&#x4E2A;&#x90FD;contribute to result&#x7684;&#xFF0C;&#x4F46;&#x6811;&#x641C;&#x7D22;&#x7684;&#x7ED3;&#x679C;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x3002;
+</li></ol>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Queue.html" class="navigation navigation-prev " aria-label="Previous page: Queue">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Heap.html" class="navigation navigation-next " aria-label="Next page: Heap">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Tree","level":"1.1.5","depth":2,"next":{"title":"Heap","level":"1.1.6","depth":2,"path":"DS/Heap.md","ref":"DS/Heap.md","articles":[]},"previous":{"title":"Queue","level":"1.1.4","depth":2,"path":"DS/Queue.md","ref":"DS/Queue.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DS/Tree.md","mtime":"2016-08-31T18:58:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T19:03:23.685Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

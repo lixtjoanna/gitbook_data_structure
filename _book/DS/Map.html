@@ -1,0 +1,597 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <title>Map · GitBook</title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.0">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Set.html" />
+    
+    
+    <link rel="prev" href="Heap.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="Array.html">
+            
+                <a href="Array.html">
+            
+                    
+                    Arrays
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="List.html">
+            
+                <a href="List.html">
+            
+                    
+                    List
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Stack.html">
+            
+                <a href="Stack.html">
+            
+                    
+                    Stack
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="Queue.html">
+            
+                <a href="Queue.html">
+            
+                    
+                    Queue
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.5" data-path="Tree.html">
+            
+                <a href="Tree.html">
+            
+                    
+                    Tree
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.6" data-path="Heap.html">
+            
+                <a href="Heap.html">
+            
+                    
+                    Heap
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.7" data-path="Map.html">
+            
+                <a href="Map.html">
+            
+                    
+                    Map
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.8" data-path="Set.html">
+            
+                <a href="Set.html">
+            
+                    
+                    Set
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.9" data-path="SearchSort.html">
+            
+                <a href="SearchSort.html">
+            
+                    
+                    Search and Sort
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Map</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="map">Map</h1><h2 id="&#x56DB;&#x79CD;&#x57FA;&#x672C;&#x5B9E;&#x73B0;">&#x56DB;&#x79CD;&#x57FA;&#x672C;&#x5B9E;&#x73B0;</h2><p><a href="http://www.programcreek.com/2013/03/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap/" target="_blank">http://www.programcreek.com/2013/03/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap/</a></p><p><img src="http://www.programcreek.com/wp-content/uploads/2009/02/MapClassHierarchy-600x354.jpg"></p><ul><li>HashMap is implemented as a hash table, and there is no ordering on keys or values.
+</li>
+<li>TreeMap is implemented based on red-black tree structure, and it is ordered by the key.
+</li>
+<li>LinkedHashMap preserves the insertion order
+</li>
+<li>Hashtable is synchronized, in contrast to HashMap. It has an overhead for synchronization.
+</li></ul>
+<p>This is the reason that HashMap should be used if the program is thread-safe.</p><h2 id="hashmap">HashMap</h2><h3 id="&#x95EE;&#x9898;&#x4E0E;&#x539F;&#x7406;">&#x95EE;&#x9898;&#x4E0E;&#x539F;&#x7406;</h3><p>Google&#x5F00;Career Fair&#xFF0C;&#x9700;&#x8981;&#x8BB0;&#x5F55;&#x6BCF;&#x4E00;&#x4E2A;visitor&#x7684;&#x59D3;&#x540D;&#x548C;&#x7B80;&#x5386;&#xFF0C;&#x8FC5;&#x901F;&#x67E5;&#x627E;&#x3002;</p><p>&#x600E;&#x4E48;&#x627E;&#xFF1F;&#x6765;&#x4E00;&#x4E2A;&#x5B58;&#x4E00;&#x4E2A;&#xFF0C;array&#xFF0C;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x67E5;&#x627E;&#x90FD;&#x662F;O(n)&#x3002;</p><p>&#x6709;&#x6CA1;&#x6709;&#x66F4;&#x5FEB;&#x7684;&#x65B9;&#x6CD5;&#xFF1F;&#x4E0A;&#x6B21;&#x8BB2;&#x5230;&#x7684;Hash&#xFF0C;&#x53EF;&#x4EE5;&#x89E3;&#x51B3;&#x201C;&#x4E00;&#x4E00;&#x5BF9;&#x5E94;&#x201D;&#x95EE;&#x9898;&#x3002;&#x5C06;&#x59D3;&#x540D;&#x4F5C;&#x4E3A;key&#xFF0C;&#x7B80;&#x5386;&#x4F5C;&#x4E3A;value&#x6765;&#x4FDD;&#x5B58;&#xFF08;&#x60F3;&#x8C61;&#x6210;&#x4E00;&#x4E2A;&#x59D3;&#x540D;&#x5BF9;&#x5E94;&#x6210;&#x4E00;&#x4E2A;&#x5C0F;&#x76D2;&#x5B50;&#xFF0C;&#x7B80;&#x5386;&#x653E;&#x5728;&#x76D2;&#x5B50;&#x91CC;&#xFF09;&#x3002;</p><p>&#x7F16;&#x54C8;&#x5E0C;&#x7801;&#x2014;&#x2014;&#x6BD4;&#x5982;&#xFF0C;&#x7B14;&#x753B;&#x6570;&#x3002;&#x4E00;&#x4E2A;&#x59D3;&#x540D;&#xFF0C;&#x6570;&#x5B8C;&#x67E5;&#x627E;&#xFF0C;&#x6CA1;&#x6709;&#x5219;&#x6DFB;&#x52A0;&#xFF0C;&#x6709;&#x5219;&#x66F4;&#x65B0;&#x3002;</p><ol><li>&#x4E0D;&#x53EF;&#x91CD;&#x590D;&#xFF1A;&#x5982;&#x679C;&#x59D3;&#x540D;&#x4E00;&#x6837;&#x600E;&#x4E48;&#x529E;&#x5462;&#xFF1F;&#x5F88;&#x9057;&#x61BE;&#xFF0C;&#x8FD9;&#x91CC;&#x5C31;&#x6CA1;&#x529E;&#x6CD5;&#x4E86;&#xFF0C;&#x4F46;&#x5982;&#x679C;&#x7528;&#x90AE;&#x7BB1;&#x5730;&#x5740;&#x5C31;&#x4E0D;&#x4F1A;&#x4E00;&#x6837;&#x4E86;&#x3002;
+</li>
+<li>&#x51B2;&#x7A81;&#x89E3;&#x51B3;&#xFF1A;&#x5982;&#x679C;&#x54C8;&#x5E0C;&#x7801;&#x4E00;&#x6837;&#xFF1F;&#x51B2;&#x7A81;&#x89E3;&#x51B3;&#xFF0C;&#x53EF;&#x4EE5;&#x7528;linear probing&#x6216;separate chaining&#x3002;
+</li>
+<li><p>Rehash: &#x5982;&#x679C;&#x51B2;&#x7A81;&#x592A;&#x591A;&#xFF1F;Rehash&#xFF0C;&#x589E;&#x52A0;&#x5C0F;&#x76D2;&#x5B50;&#xFF0C;&#x54C8;&#x5E0C;&#x7801;&#x53D8;&#x6210;&#x7B14;&#x753B;&#x6570;+&#x7B14;&#x753B;&#x6570;%&#x76D2;&#x5B50;&#x6570;&#xFF0C;&#x66F4;&#x52A0;&#x5747;&#x5300;&#x5206;&#x6563;&#x3002;</p><ul><li>&#x5982;&#x4F55;&#x6D4B;&#x91CF;&#x201C;&#x51B2;&#x7A81;&#x592A;&#x591A;&#x201D;&#xFF1F; Load Factor = numElement / sizeOfArray
+</li></ul>
+</li>
+<li><p>&#x6CA1;&#x6709;&#x987A;&#x5E8F;&#xFF1A; &#x6CE8;&#x610F;&#xFF0C;&#x7B14;&#x753B;&#x6570;&#x6216;&#x59D3;&#x540D;&#x62FC;&#x97F3;&#x7B49;&#x7F16;&#x7801;&#x770B;&#x8D77;&#x6765;&#x662F;&#x6709;&#x987A;&#x5E8F;&#x7684;&#xFF0C;&#x4F46;&#x6211;&#x4EEC;&#x4E5F;&#x53EF;&#x4EE5;&#x7528;&#x5176;&#x4ED6;&#x65B9;&#x5F0F;&#x7F16;&#x7801;&#xFF0C;&#x90A3;&#x65F6;&#x987A;&#x5E8F;&#x5C31;&#x4E0D;&#x597D;&#x9884;&#x6D4B;&#x4E86;&#x3002;Hash&#x6CD5;&#x81EA;&#x8EAB;&#x662F;&#x65E0;&#x6CD5;&#x7ED9;&#x5143;&#x7D20;&#x6392;&#x5E8F;&#x7684;&#x3002;</p></li></ol>
+<p>&#x8FD9;&#x79CD;&#x7528;&#x54C8;&#x5E0C;&#x7801;&#x5B58;&#x50A8;key-value pair&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF0C;&#x53EB;HashMap&#x3002;</p><h3 id="&#x529F;&#x80FD;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x590D;&#x6742;&#x5EA6;">&#x529F;&#x80FD;&#x3001;&#x65B9;&#x6CD5;&#x3001;&#x590D;&#x6742;&#x5EA6;</h3><p><a href="http://www.programcreek.com/2013/04/frequently-used-methods-of-java-hashmap/" target="_blank">Frequently Used Methods of HashMap</a></p><ol><li><p>&#x529F;&#x80FD;&#xFF1A;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x3001;&#x641C;&#x7D22;&#xFF08;&#x63D0;&#x53D6;&#xFF09;&#x5168;&#x90E8;O(1)</p><pre><code class="lang-java"> <span class="hljs-function">V <span class="hljs-title">put</span><span class="hljs-params">(K key, V value)</span>
+ V <span class="hljs-title">get</span><span class="hljs-params">(Object key)</span>
+ V <span class="hljs-title">remove</span><span class="hljs-params">(Object key)</span>
+ Boolean <span class="hljs-title">containsKey</span><span class="hljs-params">(Object key)</span></span></code></pre>
+<ol><li>&#x4E0D;&#x80FD;&#x505A;&#x5230;&#xFF1A;&#x5B9A;&#x4F4D;&#xFF0C;&#x6392;&#x5E8F;
+</li></ol>
+</li>
+<li><p>Traverse&#x65B9;&#x6CD5;&#xFF1A;&#x6CA1;&#x6709;&#x987A;&#x5E8F;&#x600E;&#x4E48;&#x904D;&#x5386;&#xFF1F;</p><p><a href="http://blog.csdn.net/tjcyjd/article/details/11111401" target="_blank">Traverse Map 4 Methods</a></p><ul><li>Iterator
+</li>
+<li>entrySet/keySet/valueSet
+</li>
+<li>Java&#x4E2D;&#x4E0D;&#x8981;&#x901A;&#x8FC7;key&#x627E;value&#x6765;&#x904D;&#x5386;&#xFF08;&#x4E0D;&#x5B8C;&#x5168;&#x662F;O(1))
+</li></ul>
+</li></ol>
+<h3 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h3><p><a href="http://developer.classpath.org/doc/java/util/HashMap-source.html" target="_blank">Java HashMap Source</a></p><ul><li><p>&#x6570;&#x636E;&#x5B58;&#x653E;&#xFF1A;Entry<k, v="">&#x662F;AbstractMap&#x4E2D;&#x5B9E;&#x73B0;&#x7684;&#xFF0C;&#x5B58;&#x653E;key, value, hash&#x548C;&#x94FE;&#x63A5;&#x5230;&#x540C;&#x4E00;&#x4E2A;hash bucket&#x7684;&#x4E0B;&#x4E00;&#x4E2A;Entry&#x7684;&#x6307;&#x9488;next&#x3002;HashMap&#x4E2D;&#x7684;HashEntry&#x662F;static class&#xFF0C;&#x7EE7;&#x627F;&#x8BE5;&#x7C7B;&#xFF0C;&#x5E76;&#x589E;&#x52A0;&#x51E0;&#x79CD;&#x65B0;&#x7684;&#x65B9;&#x6CD5;&#x3002;</k,></p><pre><code class="lang-java"><span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Entry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt; <span class="hljs-keyword">implements</span> <span class="hljs-title">Map</span>.<span class="hljs-title">Entry</span>&lt;<span class="hljs-title">K</span>,<span class="hljs-title">V</span>&gt; </span>{
+       <span class="hljs-keyword">final</span> K key;
+       V value;
+       Entry&lt;K,V&gt; next;
+       <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> hash;
+           <span class="hljs-comment">//...</span>
+}</code></pre>
+<ul><li><p>put<k,v>
+&#x5C06;&#x5B9A;&#x4E49;&#x597D;&#x7684;key&#x548C;value&#x653E;&#x8FDB;HashMap&#x4E2D;&#x3002;&#x5148;&#x8BA1;&#x7B97;&#x51FA;hash code&#xFF0C;&#x800C;&#x540E;&#x5728;&#x5BF9;&#x5E94;&#x94FE;&#x8868;&#x4E2D;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x5DF2;&#x5B58;&#x5728;&#x8BE5;key&#x3002;&#x5982;&#x5B58;&#x5728;&#xFF0C;&#x66F4;&#x65B0;&#x5BF9;&#x5E94;value&#xFF1B;&#x5982;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5C06;&#x65B0;&#x7684;entry&#x52A0;&#x5165;&#x8BE5;&#x94FE;&#x8868;&#x3002;</k,v></p><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">put</span><span class="hljs-params">(K key, V value)</span> </span>{
+  <span class="hljs-keyword">int</span> idx = hash(key); <span class="hljs-comment">// get the bucket index</span>
+  HashEntry&lt;K, V&gt; e = buckets[idx];
+
+  <span class="hljs-keyword">while</span> (e != <span class="hljs-keyword">null</span>) { <span class="hljs-comment">// While this hash bucket is not empty</span>
+    <span class="hljs-keyword">if</span> (equals(key, e.key)) { <span class="hljs-comment">// If the key already exists, update the value and return old value</span>
+      e.access(); <span class="hljs-comment">// Must call this for bookkeeping in LinkedHashMap. In HashMap it does not do anything.</span>
+      V r = e.value;
+      e.value = value;
+      <span class="hljs-keyword">return</span> r; <span class="hljs-comment">// return the replaced old value</span>
+    }
+    <span class="hljs-keyword">else</span> <span class="hljs-comment">// if the key does not exist, loop through until e is null</span>
+      e = e.next;
+  }
+
+  <span class="hljs-comment">// At this point, we know we need to add a new entry</span>
+        modCount++; <span class="hljs-comment">// For fail-fast</span>
+      <span class="hljs-keyword">if</span> (++size &gt; threshold){ <span class="hljs-comment">// if there are too many key-value pairs, rehash</span>
+        rehash();
+         <span class="hljs-comment">// Need a new hash value to suit the bigger table.</span>
+        idx = hash(key);
+      }
+
+  <span class="hljs-comment">// LinkedHashMap cannot override put(), hence this call.</span>
+  addEntry(key, value, idx, <span class="hljs-keyword">true</span>); <span class="hljs-comment">// add a new entry to the beginning of the bucket</span>
+  <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>; <span class="hljs-comment">// no old value so return null to show key does not exist before</span>
+}</code></pre>
+</li></ul>
+</li></ul>
+<p>loadFactor&#x601D;&#x60F3;&#x3002;Java7&#x6E90;&#x7801;&#x3002;</p><ul><li><p>get\<k>
+&#x5F97;&#x5230;hash-&gt;&#x626B;&#x63CF;&#x94FE;&#x8868;-&gt;key&#x76F8;&#x7B49;&#x65F6;&#x53D6;&#x51FA;value-&gt;&#x6CA1;&#x6709;key&#x8FD4;&#x56DE;null</k></p><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">get</span><span class="hljs-params">(Object key)</span> 
+</span>{
+   <span class="hljs-keyword">int</span> idx = hash(key);
+   HashEntry&lt;K, V&gt; e = buckets[idx];
+   <span class="hljs-keyword">while</span> (e != <span class="hljs-keyword">null</span>)
+   {
+     <span class="hljs-keyword">if</span> (equals(key, e.key))
+       <span class="hljs-keyword">return</span> e.value;
+     e = e.next;
+   }
+   <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}</code></pre>
+<ul><li>containsKey\<k>
+&#x4E00;&#x6837;&#x7684;&#x626B;&#x63CF;&#x94FE;&#x8868;&#x65B9;&#x5F0F;&#xFF0C;&#x626B;&#x5230;key&#x4EE5;&#x540E;&#x8FD4;&#x56DE;true&#xFF0C;&#x6CA1;&#x626B;&#x5230;&#x8FD4;&#x56DE;false&#x3002;
+</k></li></ul>
+<pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">boolean</span> <span class="hljs-title">containsKey</span><span class="hljs-params">(Object key)</span>
+</span>{
+   <span class="hljs-keyword">int</span> idx = hash(key);
+   HashEntry&lt;K, V&gt; e = buckets[idx];
+   <span class="hljs-keyword">while</span> (e != <span class="hljs-keyword">null</span>)
+   {
+     <span class="hljs-keyword">if</span> (equals(key, e.key))
+       <span class="hljs-keyword">return</span> <span class="hljs-keyword">true</span>;
+     e = e.next;
+   }
+   <span class="hljs-keyword">return</span> <span class="hljs-keyword">false</span>;
+}</code></pre>
+<ul><li>remove<k>
+</k></li></ul>
+<p>&#x626B;&#x63CF;&#xFF0C;&#x627E;&#x5230;&#x5143;&#x7D20;&#x5E76;&#x8DF3;&#x8FC7;&#x5B83;&#x91CD;&#x65B0;&#x63A5;&#x7EED;&#x94FE;&#x8868;&#xFF08;&#x82E5;&#x5143;&#x7D20;&#x4E3A;&#x7B2C;&#x4E00;&#x4F4D;&#x5219;&#x9700;&#x8981;assign bucket[idx]&#xFF09;&#x3002;</p><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> V <span class="hljs-title">remove</span><span class="hljs-params">(Object key)</span> </span>{
+   <span class="hljs-keyword">int</span> idx = hash(key);
+   HashEntry&lt;K, V&gt; e = buckets[idx];
+   HashEntry&lt;K, V&gt; last = <span class="hljs-keyword">null</span>;
+
+   <span class="hljs-keyword">while</span> (e != <span class="hljs-keyword">null</span>)
+   {
+     <span class="hljs-keyword">if</span> (equals(key, e.key))
+     {
+       modCount++;
+       <span class="hljs-keyword">if</span> (last == <span class="hljs-keyword">null</span>)
+         buckets[idx] = e.next;
+       <span class="hljs-keyword">else</span>
+         last.next = e.next;
+       size--;
+ <span class="hljs-comment">// Method call necessary for LinkedHashMap to work correctly.</span>
+       <span class="hljs-keyword">return</span> e.cleanup();
+     }
+     last = e;
+     e = e.next;
+   }
+   <span class="hljs-keyword">return</span> <span class="hljs-keyword">null</span>;
+}</code></pre>
+<ul><li>resize\<int newcapacity="">
+&#x5F53;&#x52A0;&#x5165;&#x65B0;entry&#x4EE5;&#x540E;&#x65B0;size &gt; threshold&#x65F6;call&#x6B64;&#x51FD;&#x6570;&#xFF0C;&#x6269;&#x5C55;array&#x957F;&#x5EA6;&#x81F3;newCapacity&#xFF0C;java&#x7528;&#x7684;&#x662F;2*oldCapacity&#xFF08;WHY?&#xFF09;&#xFF0C;&#x5E76;&#x5C06;&#x65E7;&#x7684;entries&#x632A;&#x79FB;&#x5230;&#x65B0;&#x7684;array&#x4E2D;&#x6765;&#x3002;
+&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;O(N)&#xFF08;&#x632A;&#x79FB;&#x65F6;&#x626B;&#x63CF;&#x5168;table&#xFF09;
+&#x96BE;&#x70B9;&#xFF1A;&#x632A;&#x79FB;&#x3002;
+&#x6CE8;&#x610F;&#xFF1A;&#x8F83;&#x65B0;&#x7248;&#x672C;&#x7684;Java&#x7528;&#x7684;index&#x7ECF;&#x8FC7;&#x4E86;&#x4F18;&#x5316;&#x5904;&#x7406;&#x3002;
+</int></li></ul>
+<pre><code class="lang-java"><span class="hljs-comment">// the &quot;rehash&quot; function in JAVA 8 that directly takes the key</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">final</span> <span class="hljs-keyword">int</span> <span class="hljs-title">hash</span><span class="hljs-params">(Object key)</span> </span>{
+    <span class="hljs-keyword">int</span> h;
+    <span class="hljs-keyword">return</span> (key == <span class="hljs-keyword">null</span>) ? <span class="hljs-number">0</span> : (h = key.hashCode()) ^ (h &gt;&gt;&gt; <span class="hljs-number">16</span>);
+    }
+<span class="hljs-comment">// the function that returns the index from the rehashed hash</span>
+<span class="hljs-function"><span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> <span class="hljs-title">indexFor</span><span class="hljs-params">(<span class="hljs-keyword">int</span> h, <span class="hljs-keyword">int</span> length)</span> </span>{
+    <span class="hljs-keyword">return</span> h &amp; (length-<span class="hljs-number">1</span>);
+}</code></pre>
+</li></ul>
+<p>Rehash Function in Java 6 (Java 8 is too long&#x2026;)</p><pre><code class="lang-java">        <span class="hljs-comment">/*Rehashes the contents of this map into a new array with a larger capacity. This method is called automatically when the number of keys in this map reaches its threshold. If current capacity is MAXIMUM_CAPACITY, this method does not resize the map, but sets threshold to Integer.MAX_VALUE. This has the effect of preventing future calls.
+            Parameters:
+            newCapacity the new capacity, MUST be a power of two; must be greater than current capacity unless current capacity is MAXIMUM_CAPACITY (in which case value is irrelevant).*/</span>
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">resize</span><span class="hljs-params">(<span class="hljs-keyword">int</span> newCapacity)</span> </span>{
+           Entry[] oldTable = table;
+           <span class="hljs-keyword">int</span> oldCapacity = oldTable.length;
+           <span class="hljs-keyword">if</span> (oldCapacity == MAXIMUM_CAPACITY) {
+               threshold = Integer.MAX_VALUE;
+               <span class="hljs-keyword">return</span>;
+           }
+
+           Entry[] newTable = <span class="hljs-keyword">new</span> Entry[newCapacity];
+           transfer(newTable);
+           table = newTable;
+           threshold = (<span class="hljs-keyword">int</span>)(newCapacity * loadFactor);
+        }
+
+        <span class="hljs-comment">/* Transfers all entries from current table to newTable. */</span>
+
+        <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">transfer</span><span class="hljs-params">(Entry[] newTable)</span> </span>{
+           Entry[] src = table;
+           <span class="hljs-keyword">int</span> newCapacity = newTable.length;
+           <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> j = <span class="hljs-number">0</span>; j &lt; src.length; j++) {
+               Entry&lt;K,V&gt; e = src[j];
+               <span class="hljs-keyword">if</span> (e != <span class="hljs-keyword">null</span>) {
+                   src[j] = <span class="hljs-keyword">null</span>;
+                   do {
+                       Entry&lt;K,V&gt; next = e.next;
+                       <span class="hljs-keyword">int</span> i = indexFor(e.hash, newCapacity);
+                       e.next = newTable[i];
+                       newTable[i] = e;
+                       e = next;
+                   } <span class="hljs-keyword">while</span> (e != <span class="hljs-keyword">null</span>);
+               }
+           }
+        }</code></pre>
+<h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3><ol><li>No order.
+</li>
+<li>No duplicate.
+</li>
+<li>Key&#x53EF;&#x4EE5;&#x662F;null&#x3002;
+</li></ol>
+<h2 id="hashtable">HashTable</h2><p>The HashMap class is roughly equivalent to Hashtable, except that it is unsynchronized and permits nulls.</p><h2 id="linkedhashmap">LinkedHashMap</h2><p>&#x600E;&#x4E48;&#x628A;Visitors&#x6309;&#x7167;&#x6765;&#x7684;&#x987A;&#x5E8F;&#x8BB0;&#x5F55;&#xFF1F;&#x4FDD;&#x6301;&#x4E00;&#x4E2A;Linked structure&#xFF0C;&#x6BCF;&#x6765;&#x4E00;&#x4E2A;&#x5C31;&#x8FDE;&#x5230;&#x672B;&#x5C3E;&#x3002;</p><p>&#x8868;&#x73B0;LinkedHashMap&#x6027;&#x8D28;&#x7684;&#x4EE3;&#x7801;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Dog d1 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;red&quot;</span>);
+        Dog d2 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;black&quot;</span>);
+        Dog d3 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;white&quot;</span>);
+        Dog d4 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;white&quot;</span>);
+
+        LinkedHashMap&lt;Dog, Integer&gt; linkedHashMap = <span class="hljs-keyword">new</span> LinkedHashMap&lt;Dog, Integer&gt;();
+        linkedHashMap.put(d1, <span class="hljs-number">10</span>);
+        linkedHashMap.put(d2, <span class="hljs-number">15</span>);
+        linkedHashMap.put(d3, <span class="hljs-number">5</span>);
+        linkedHashMap.put(d4, <span class="hljs-number">20</span>);
+
+        <span class="hljs-keyword">for</span> (Entry&lt;Dog, Integer&gt; entry : linkedHashMap.entrySet()) {
+            System.out.println(entry.getKey() + <span class="hljs-string">&quot; - &quot;</span> + entry.getValue());
+        }        
+}</code></pre>
+<p>Output&#x4E00;&#x5B9A;&#x662F;&#xFF1A;</p><pre><code>red dog - 10
+black dog - 15
+white dog - 20</code></pre>
+<p>&#x5982;&#x679C;&#x7528;HashMap, output&#x4E0D;&#x4E00;&#x5B9A;&#x80FD;&#x4FDD;&#x6301;&#x8FD9;&#x4E2A;&#x987A;&#x5E8F;&#x3002;</p><h2 id="treemap">TreeMap</h2><h3 id="&#x529F;&#x80FD;">&#x529F;&#x80FD;</h3><p>&#x90A3;&#x5982;&#x679C;&#x60F3;&#x5BF9;visitor&#x6309;&#x7167;&#x5E74;&#x9F84;&#x7B49;&#x56E0;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x5462;&#xFF1F;LinkedHashMap&#x5C31;&#x4E0D;&#x80FD;&#x6EE1;&#x8DB3;&#x4E86;&#xFF0C;&#x5B83;&#x53EA;&#x80FD;&#x505A;&#x5230;&#x6309;put&#x7684;&#x987A;&#x5E8F;&#x8F93;&#x51FA;&#x3002;</p><p>TreeMap&#xFF1A;&#x4ECD;&#x7136;&#x4E0D;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;value&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#xFF0C;&#x4F46;&#x53EF;&#x4EE5;&#x9488;&#x5BF9;key&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x3002;&#x91CD;&#x5199;hashCode function&#x5C31;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x67D0;&#x79CD;&#x60F3;&#x8981;&#x7684;&#x987A;&#x5E8F;&#x3002;&#x8FD9;&#x8BF4;&#x660E;&#xFF1A;&#x7528;TreeMap&#x7684;&#x8BDD;&#xFF0C;key&#x5FC5;&#x987B;&#x662F;comparable&#x7684;&#xFF01;&#x53EF;&#x4EE5;&#x7528;override compareTo function&#x6765;&#x5B9E;&#x73B0;&#x3002;</p><p>&#x5F53;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;HashMap&#x4E2D;&#x7684;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6392;&#x5E8F;&#x65F6;&#xFF0C;&#x53EF;&#x4EE5;&#x5C06;&#x5176;&#x8F6C;&#x6362;&#x5165;TreeMap&#x6765;&#x6392;&#x3002;</p><p>&#x8FD9;&#x6BB5;&#x4EE3;&#x7801;&#x628A;Dog&#x8FDB;&#x884C;&#x4E86;&#x6309;size&#x7684;&#x6392;&#x5E8F;&#xFF1A;</p><pre><code class="lang-java"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Dog</span> <span class="hljs-keyword">implements</span> <span class="hljs-title">Comparable</span>&lt;<span class="hljs-title">Dog</span>&gt;</span>{
+    String color;
+    <span class="hljs-keyword">int</span> size;
+
+    Dog(String c, <span class="hljs-keyword">int</span> s) {
+        color = c;
+        size = s;
+    }
+
+    <span class="hljs-function"><span class="hljs-keyword">public</span> String <span class="hljs-title">toString</span><span class="hljs-params">()</span></span>{    
+        <span class="hljs-keyword">return</span> color + <span class="hljs-string">&quot; dog&quot;</span>;
+    }
+
+    <span class="hljs-meta">@Override</span>
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">compareTo</span><span class="hljs-params">(Dog o)</span> </span>{
+        <span class="hljs-keyword">return</span>  o.size - <span class="hljs-keyword">this</span>.size;
+    }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">TestTreeMap</span> </span>{
+    <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span> </span>{
+        Dog d1 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;red&quot;</span>, <span class="hljs-number">30</span>);
+        Dog d2 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;black&quot;</span>, <span class="hljs-number">20</span>);
+        Dog d3 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;white&quot;</span>, <span class="hljs-number">10</span>);
+        Dog d4 = <span class="hljs-keyword">new</span> Dog(<span class="hljs-string">&quot;white&quot;</span>, <span class="hljs-number">10</span>);
+
+        TreeMap&lt;Dog, Integer&gt; treeMap = <span class="hljs-keyword">new</span> TreeMap&lt;Dog, Integer&gt;();
+        treeMap.put(d1, <span class="hljs-number">10</span>);
+        treeMap.put(d2, <span class="hljs-number">15</span>);
+        treeMap.put(d3, <span class="hljs-number">5</span>);
+        treeMap.put(d4, <span class="hljs-number">20</span>);
+
+        <span class="hljs-keyword">for</span> (Entry&lt;Dog, Integer&gt; entry : treeMap.entrySet()) {
+            System.out.println(entry.getKey() + <span class="hljs-string">&quot; - &quot;</span> + entry.getValue());
+        }
+    }
+}</code></pre>
+<h3 id="&#x65B9;&#x6CD5;">&#x65B9;&#x6CD5;</h3><p><a href="http://www.tutorialspoint.com/java/java_treemap_class.htm" target="_blank">http://www.tutorialspoint.com/java/java_treemap_class.htm</a></p><p>&#x5173;&#x952E;&#xFF1A;&#x53EF;&#x4EE5;&#x63D0;&#x53D6;&#x5934;&#x90E8;&#x3001;&#x5C3E;&#x90E8;&#x7684;key&#x548C;map&#x3002;</p><h3 id="&#x5B9E;&#x73B0;&#x53CA;&#x590D;&#x6742;&#x5EA6;">&#x5B9E;&#x73B0;&#x53CA;&#x590D;&#x6742;&#x5EA6;</h3><p>&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x7EF4;&#x62A4;&#x987A;&#x5E8F;&#xFF0C;&#x7528;&#x7EA2;&#x9ED1;&#x6811;&#x6765;&#x5B9E;&#x73B0;&#xFF08;&#x81EA;&#x5E73;&#x8861;&#x7684;BST&#xFF09;&#x3002;</p><p>&#x6CA1;&#x6709;&#x7528;Hash&#x6240;&#x4EE5;&#x6DFB;&#x5220;&#x641C;&#x590D;&#x6742;&#x5EA6;&#x4E0D;&#x518D;&#x4FDD;&#x6301;O(1)&#xFF0C;&#x800C;&#x662F;Tree&#x7684;O(log N)</p><h3 id="&#x6CE8;&#x610F;&#x4E8B;&#x9879;">&#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3><ul><li>&#x56E0;&#x4E3A;&#x57FA;&#x4E8E;HashMap&#xFF0C;&#x6240;&#x4EE5;entry&#x5982;&#x679C;&#x662F;&#x65B0;class&#x8981;override equals()&#x548C;hashCode()&#xFF0C;
+</li>
+<li>&#x540C;&#x65F6;&#xFF0C;entry&#x5982;&#x679C;&#x662F;&#x65B0;class&#x4E5F;&#x5FC5;&#x987B;implement Comparable interface&#xFF0C;override compareTo()&#x3002;
+</li>
+<li>Key&#x4E0D;&#x80FD;&#x6709;duplicate&#xFF0C;&#x5982;&#x679C;&#x6709;&#x7684;&#x8BDD;&#x5C31;&#x4F1A;&#x66FF;&#x6362;&#xFF0C;&#x8FD9;&#x70B9;&#x548C;HashMap&#x4E00;&#x6837;&#x3002;
+</li></ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Heap.html" class="navigation navigation-prev " aria-label="Previous page: Heap">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Set.html" class="navigation navigation-next " aria-label="Next page: Set">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Map","level":"1.1.7","depth":2,"next":{"title":"Set","level":"1.1.8","depth":2,"path":"DS/Set.md","ref":"DS/Set.md","articles":[]},"previous":{"title":"Heap","level":"1.1.6","depth":2,"path":"DS/Heap.md","ref":"DS/Heap.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DS/Map.md","mtime":"2016-08-31T18:58:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T19:03:23.685Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
