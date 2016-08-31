@@ -333,7 +333,7 @@
 &#x5F53;&#x4E00;&#x6B21;&#x5185;&#x5FAA;&#x73AF;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x82E5;&#x6CA1;&#x6709;&#x53D1;&#x73B0;&#x9006;&#x5E8F;&#x73B0;&#x8C61;&#xFF0C;&#x8BF4;&#x660E;&#x5DF2;&#x7ECF;&#x6392;&#x5B8C;&#x4E86;&#xFF0C;&#x5DE6;&#x8FB9;&#x7684;&#x5143;&#x7D20;&#x81EA;&#x52A8;&#x8FDB;&#x5165;&#x6392;&#x597D;&#x72B6;&#x6001;&#xFF0C;&#x5373;&#x4F7F;&#x5916;&#x5FAA;&#x73AF;&#x8FD8;&#x6709;&#x6B21;&#x6570;&#x5269;&#x4E0B;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x63D0;&#x524D;&#x7ED3;&#x675F;&#x3002;
 </li>
 <li>&#x4E24;&#x4E2A;&#x5206;&#x7C7B;&#xFF1A;
-&#x5C07;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x5C0D;&#x8C61;&#x5206;&#x4F5C;&#x5169;&#x90E8;&#x4EFD;&#xFF0C;&#x4E00;&#x500B;&#x662F;&#x5DF2;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x4E00;&#x500B;&#x662F;&#x672A;&#x6392;&#x5E8F;&#x7684;&#x3002;&#x6392;&#x5E8F;&#x6642;&#x82E5;&#x662F;&#x5F9E;&#x5C0F;&#x5230;&#x5927;&#xFF0C;&#x6700;&#x5927;&#x5143;&#x7D20;&#x6703;&#x5982;&#x540C;&#x6C23;&#x6CE1;&#x4E00;&#x6A23;&#x79FB;&#x81F3;&#x53F3;&#x7AEF;&#xFF0C;&#x5176;&#x5229;&#x7528;&#x6BD4;&#x8F03;&#x76F8;&#x9130;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C07;&#x8F03;&#x5927;&#x5143;&#x7D20;&#x4EA4;&#x63DB;&#x81F3;&#x53F3;&#x7AEF;&#xFF0C;&#x6240;&#x4EE5;&#x8F03;&#x5927;&#x7684;&#x5143;&#x7D20;&#x6703;&#x4E0D;&#x65B7;&#x5F80;&#x53F3;&#x79FB;&#x52D5;&#xFF0C;&#x76F4;&#x5230;&#x9069;&#x7576;&#x7684;&#x4F4D;&#x7F6E;&#x70BA;&#x6B62;&#x3002; 
+&#x5C07;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x5C0D;&#x8C61;&#x5206;&#x4F5C;&#x5169;&#x90E8;&#x4EFD;&#xFF0C;&#x4E00;&#x500B;&#x662F;&#x5DF2;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x4E00;&#x500B;&#x662F;&#x672A;&#x6392;&#x5E8F;&#x7684;&#x3002;&#x6392;&#x5E8F;&#x6642;&#x82E5;&#x662F;&#x5F9E;&#x5C0F;&#x5230;&#x5927;&#xFF0C;&#x6700;&#x5927;&#x5143;&#x7D20;&#x6703;&#x5982;&#x540C;&#x6C23;&#x6CE1;&#x4E00;&#x6A23;&#x79FB;&#x81F3;&#x53F3;&#x7AEF;&#xFF0C;&#x5176;&#x5229;&#x7528;&#x6BD4;&#x8F03;&#x76F8;&#x9130;&#x5143;&#x7D20;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x5C07;&#x8F03;&#x5927;&#x5143;&#x7D20;&#x4EA4;&#x63DB;&#x81F3;&#x53F3;&#x7AEF;&#xFF0C;&#x6240;&#x4EE5;&#x8F03;&#x5927;&#x7684;&#x5143;&#x7D20;&#x6703;&#x4E0D;&#x65B7;&#x5F80;&#x53F3;&#x79FB;&#x52D5;&#xFF0C;&#x76F4;&#x5230;&#x9069;&#x7576;&#x7684;&#x4F4D;&#x7F6E;&#x70BA;&#x6B62;&#x3002;
 </li></ul>
 </li>
 <li><p>&#x65F6;&#x95F4;&#x590D;&#x6742;&#x5EA6;&#xFF1A;
@@ -353,8 +353,8 @@ N^2 / 2 comparisons, N^2/4 swaps.
                 arr[j] = temp;
             }
         }
-        <span class="hljs-keyword">if</span> (!swapped) 
-            <span class="hljs-keyword">break</span>;<span class="hljs-comment">// If this round of scan shows absolutely correct order    </span>
+        <span class="hljs-keyword">if</span> (!swapped)
+            <span class="hljs-keyword">break</span>;<span class="hljs-comment">// If this round of scan shows absolutely correct order</span>
     }
 }</code></pre>
 </li></ul>
@@ -369,20 +369,20 @@ How about number of swaps? What is the time complexity?</p><pre><code class="lan
     <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> out=<span class="hljs-number">0</span>; out &lt; data.length-<span class="hljs-number">1</span>; out++) {
         min = out; <span class="hljs-comment">// set initial min index to be out</span>
         <span class="hljs-comment">// move forward to right from out+1 to the end</span>
-        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> in = out+<span class="hljs-number">1</span>; in &lt; data.length; in++) 
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> in = out+<span class="hljs-number">1</span>; in &lt; data.length; in++)
             <span class="hljs-keyword">if</span>(data[in] &lt; data[min]) <span class="hljs-comment">// if data is smaller than current min value</span>
                 min = in; <span class="hljs-comment">// set a new min index</span>
 
         <span class="hljs-comment">// swap min value with the first one as we move to the right</span>
         <span class="hljs-comment">// swap is happening within the outer loop</span>
-        swap(data, out, min); 
+        swap(data, out, min);
     }
 }</code></pre>
 </li></ul>
 <h4 id="insert-sort">Insert Sort</h4><p>&#x5C07;&#x8981;&#x6392;&#x5E8F;&#x7684;&#x5C0D;&#x8C61;&#x5206;&#x4F5C;&#x5169;&#x90E8;&#x4EFD;&#xFF0C;&#x4E00;&#x500B;&#x662F;&#x5DF2;&#x6392;&#x5E8F;&#x7684;&#xFF0C;&#x4E00;&#x500B;&#x662F;&#x672A;&#x6392;&#x5E8F;&#x7684;&#x3002;&#x6BCF;&#x6B21;&#x5F9E;&#x5F8C;&#x7AEF;&#x672A;&#x6392;&#x5E8F;&#x90E8;&#x4EFD;&#x53D6;&#x5F97;&#x6700;&#x524D;&#x7AEF;&#x7684;&#x503C;&#xFF0C;&#x7136;&#x5F8C;&#x63D2;&#x5165;&#x524D;&#x7AEF;&#x5DF2;&#x6392;&#x5E8F;&#x90E8;&#x4EFD;&#x7684;&#x9069;&#x7576;&#x4F4D;&#x7F6E;&#x3002;
 &#x5F88;&#x7B26;&#x5408;&#x751F;&#x6D3B;&#x4E2D;&#x6392;&#x5E8F;&#x7684;&#x76F4;&#x89C9;&#x3002;
 &#x4E5F;&#x662F;O(N^2)&#x4F46;&#x662F;&#x6BD4;&#x524D;&#x4E8C;&#x8005;&#x5C0F;&#xFF0C;&#x56E0;&#x4E3A;&#x4E0D;&#x7528;swap&#x800C;&#x662F;&#x7528;shift&#x3002;</p><pre><code class="lang-java"> <span class="hljs-comment">/*
- O(n^2) fastest among the three because there is less number of comparisons 
+ O(n^2) fastest among the three because there is less number of comparisons
  and uses shifting instead of swapping
  */</span>
 <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">insertionSort</span><span class="hljs-params">(<span class="hljs-keyword">int</span>[] data)</span> </span>{
@@ -405,11 +405,11 @@ How about number of swaps? What is the time complexity?</p><pre><code class="lan
 <li><p>Conquer each problem using the same process.</p></li>
 <li><p>Finally, combine the results of simpler ones to have the final answer.</p><p>&#x200B;</p></li></ul>
 </li></ol>
-<p><img alt="MergeSort" src="http://www.java2novice.com/images/merge_sort.png"></p><ol><li><p>&#x6B65;&#x9AA4;</p><p>There are three steps involved in merge sort.</p><ul><li>Sort the first half using merge sort. 
+<p><img alt="MergeSort" src="https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/merge_sort1.png"></p><ol><li><p>&#x6B65;&#x9AA4;</p><p>There are three steps involved in merge sort.</p><ul><li>Sort the first half using merge sort. 
 </li>
 <li>Sort the second half using merge sort.
 </li>
-<li>Merge the sorted two halves to create the final sorted result. 
+<li>Merge the sorted two halves to create the final sorted result.
 </li></ul>
 </li>
 <li><p>&#x5B9E;&#x73B0;</p><p>&#x5728;&#x4E0D;&#x540C;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x4E0A;Merge&#x5143;&#x7D20;&#x7684;&#x5404;&#x79CD;&#x65B9;&#x6CD5;&#x7ECF;&#x5E38;&#x88AB;&#x8003;&#x3002;</p><pre><code class="lang-java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span>[] mergeSort(<span class="hljs-keyword">int</span>[] data) {
@@ -562,7 +562,7 @@ How about number of swaps? What is the time complexity?</p><pre><code class="lan
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Search and Sort","level":"1.1.9","depth":2,"previous":{"title":"Set","level":"1.1.8","depth":2,"path":"DS/Set.md","ref":"DS/Set.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DS/SearchSort.md","mtime":"2016-08-31T18:58:40.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T19:03:23.685Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"Search and Sort","level":"1.1.9","depth":2,"previous":{"title":"Set","level":"1.1.8","depth":2,"path":"DS/Set.md","ref":"DS/Set.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"DS/SearchSort.md","mtime":"2016-08-31T23:05:24.000Z","type":"markdown"},"gitbook":{"version":"3.2.0","time":"2016-08-31T19:03:23.685Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

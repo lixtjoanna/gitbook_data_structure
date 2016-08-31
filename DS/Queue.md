@@ -3,7 +3,7 @@
 ##问题和原理
 上次我们介绍了如何处理LIFO，也就是Last in First Out的问题。
 还有一种非常类似的情形，就是我们熟悉的排队。我们进入一个队列，等待排到我们，每次排到的都是队列里最早来的人，也就是FIFO，First in First Out。
-![](http://cs.lmu.edu/~ray/images/queues.png)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/queue1.png)
 这种功能，应该如何实现呢？你也许会猜到，类似于Stack，用Array、ArrayList、LinkedList也一样都能实现，但也都比较麻烦。同样类似于Stack，我们也可以设计一种直接实现FIFO功能的数据结构，也就是队列Queue。
 
 ##功能、方法及复杂度
@@ -71,18 +71,18 @@
    public class Queue {
        private Stack<Integer> stack1;
        private Stack<Integer> stack2;
-       
+
        public Queue() {
           stack1 = new Stack<Integer>();
           stack2 = new Stack<Integer>();
        }
-       
+
        private void stack2ToStack1() {
    		while (!stack2.empty()) {
    			stack1.push(stack2.pop());
    		}
    	}
-   	
+
        public void push(int number) {
            stack2.push(number);
        }

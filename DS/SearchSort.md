@@ -70,10 +70,10 @@ BST也可以做Binary Search，一次去掉一半即可。
 ```java
   public TreeNode inorderSuccessor(TreeNode root, TreeNode p) {
       if (root == null || p == null) return null;
-      
+
       //二分查找标记更新successor（右父亲）
       TreeNode successor = null;
-      
+
       while(root != null && root.val != p.val) {
           if (root.val > p.val) {
               successor = root;
@@ -83,11 +83,11 @@ BST也可以做Binary Search，一次去掉一半即可。
               root = root.right;
           }
       }
-      
+
       if (root == null) return null;//没找到p
-      
+
       if (p.right == null) return successor;//p没有右子树
-      
+
       p = p.right;//p的右子树的左极
       while (p.left != null) {
           p = p.left;
@@ -116,7 +116,7 @@ BST也可以做Binary Search，一次去掉一半即可。
     内循环检查的元素数量，到排过的顶层元素为止。所以每进行一次内循环，右侧需要检查的元素都向左推进一位。
     当一次内循环结束后，若没有发现逆序现象，说明已经排完了，左边的元素自动进入排好状态，即使外循环还有次数剩下，也可以提前结束。
   - 两个分类：
-    將要排序的對象分作兩部份，一個是已排序的，一個是未排序的。排序時若是從小到大，最大元素會如同氣泡一樣移至右端，其利用比較相鄰元素的方式，將較大元素交換至右端，所以較大的元素會不斷往右移動，直到適當的位置為止。 
+    將要排序的對象分作兩部份，一個是已排序的，一個是未排序的。排序時若是從小到大，最大元素會如同氣泡一樣移至右端，其利用比較相鄰元素的方式，將較大元素交換至右端，所以較大的元素會不斷往右移動，直到適當的位置為止。
 
 - 时间复杂度：
   N^2 / 2 comparisons, N^2/4 swaps.
@@ -138,8 +138,8 @@ BST也可以做Binary Search，一次去掉一半即可。
   				arr[j] = temp;
   			}
   		}
-  		if (!swapped) 
-  			break;// If this round of scan shows absolutely correct order	
+  		if (!swapped)
+  			break;// If this round of scan shows absolutely correct order
   	}
   }
   ```
@@ -161,13 +161,13 @@ BST也可以做Binary Search，一次去掉一半即可。
   	for(int out=0; out < data.length-1; out++) {
   		min = out; // set initial min index to be out
   		// move forward to right from out+1 to the end
-  		for(int in = out+1; in < data.length; in++) 
+  		for(int in = out+1; in < data.length; in++)
   			if(data[in] < data[min]) // if data is smaller than current min value
   				min = in; // set a new min index
-  		
+
   		// swap min value with the first one as we move to the right
   		// swap is happening within the outer loop
-  		swap(data, out, min); 
+  		swap(data, out, min);
   	}
   }
   ```
@@ -180,7 +180,7 @@ BST也可以做Binary Search，一次去掉一半即可。
 
 ```java
  /*
- O(n^2) fastest among the three because there is less number of comparisons 
+ O(n^2) fastest among the three because there is less number of comparisons
  and uses shifting instead of swapping
  */
 public static void insertionSort(int[] data) {
@@ -213,17 +213,17 @@ There is a time that this insertion sort can run even faster as much as in O(N) 
 
 1. 原理
 
-   Merge Sort is an example of divide and conquer algorithm: 
+   Merge Sort is an example of divide and conquer algorithm:
 
-   - Divide the given problem into simpler versions of itself. 
+   - Divide the given problem into simpler versions of itself.
 
-   - Conquer each problem using the same process. 
+   - Conquer each problem using the same process.
 
-   - Finally, combine the results of simpler ones to have the final answer. 
+   - Finally, combine the results of simpler ones to have the final answer.
 
      ​
 
-   ![MergeSort](http://www.java2novice.com/images/merge_sort.png)
+   ![MergeSort](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/merge_sort1.png)
 
 2. 步骤
 
@@ -231,7 +231,7 @@ There is a time that this insertion sort can run even faster as much as in O(N) 
 
    - Sort the first half using merge sort. 
    - Sort the second half using merge sort.
-   - Merge the sorted two halves to create the final sorted result. 
+   - Merge the sorted two halves to create the final sorted result.
 
 3. 实现
 
@@ -371,7 +371,6 @@ There is a time that this insertion sort can run even faster as much as in O(N) 
 
 4. 注意事项
 
-   You cannot simply say that the running time complexity of quick sort is  O(N*logN). In fact, its worst case running time complexity is O(N^2). It  is important for you to know its possibility of degeneration and  strategies to mitigate it. 
+   You cannot simply say that the running time complexity of quick sort is  O(N*logN). In fact, its worst case running time complexity is O(N^2). It  is important for you to know its possibility of degeneration and  strategies to mitigate it.
 
 #### Heap Sort
-

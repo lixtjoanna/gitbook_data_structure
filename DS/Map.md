@@ -4,7 +4,7 @@
 
 http://www.programcreek.com/2013/03/hashmap-vs-treemap-vs-hashtable-vs-linkedhashmap/
 
-![](http://www.programcreek.com/wp-content/uploads/2009/02/MapClassHierarchy-600x354.jpg)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/map1.jpg)
 
 - HashMap is implemented as a hash table, and there is no ordering on keys or values.
 - TreeMap is implemented based on red-black tree structure, and it is ordered by the key.
@@ -117,7 +117,7 @@ Google开Career Fair，需要记录每一个visitor的姓名和简历，迅速�
      得到hash->扫描链表->key相等时取出value->没有key返回null
 
      ```java
-     public V get(Object key) 
+     public V get(Object key)
      {
         int idx = hash(key);
         HashEntry<K, V> e = buckets[idx];
@@ -203,7 +203,7 @@ Rehash Function in Java 6 (Java 8 is too long…)
 		/*Rehashes the contents of this map into a new array with a larger capacity. This method is called automatically when the number of keys in this map reaches its threshold. If current capacity is MAXIMUM_CAPACITY, this method does not resize the map, but sets threshold to Integer.MAX_VALUE. This has the effect of preventing future calls.
 			Parameters:
 			newCapacity the new capacity, MUST be a power of two; must be greater than current capacity unless current capacity is MAXIMUM_CAPACITY (in which case value is irrelevant).*/
-			
+
 		void resize(int newCapacity) {
 		   Entry[] oldTable = table;
 		   int oldCapacity = oldTable.length;
@@ -211,7 +211,7 @@ Rehash Function in Java 6 (Java 8 is too long…)
 		       threshold = Integer.MAX_VALUE;
 		       return;
 		   }
-		
+
 		   Entry[] newTable = new Entry[newCapacity];
 		   transfer(newTable);
 		   table = newTable;
@@ -312,7 +312,7 @@ class Dog implements Comparable<Dog>{
 		size = s;
 	}
  
-	public String toString(){	
+	public String toString(){
 		return color + " dog";
 	}
  

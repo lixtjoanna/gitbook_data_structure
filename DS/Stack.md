@@ -6,10 +6,10 @@
 互联网已经成为我们生活不可或缺的一部分，我们在使用浏览器浏览网页时，经常需要点击浏览器的“后退”键，它帮助我们链接到当前页面的上一个页面。我们应当使用什么样的数据结构来实现这个“后退”功能呢？（我们暂时不考虑很多浏览器也有的“前进”功能）。
 
 我们能够想到，其实以前学过的几种线性数据结构，几乎都可以解决这个问题。比如ArrayList，可以随着浏览过程，把我们浏览过的网页地址一个个add进去，需要后退的时候就把当前网页地址remove，再把它前边的那个网页地址提取出来，就可以了。这个操作的复杂度是O(1)。【图】
-![](http://cs.lmu.edu/~ray/images/arraystack.gif)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/arraystack.gif)
 
 再比如LinkedList，每浏览一个网页，就把它link到当前list的最前端，要回到上一个网页，只需要把head节点的网页remove，新的head就是所需要的网页了。这个操作的复杂度也是O(1)。
-![](http://cs.lmu.edu/~ray/images/linkedstack.gif)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/linkedstack.gif)
 
 不过，fixed size的array是不可以的，因为网页太多，array不会动态更新长度，就溢出了。如果这个array是动态的，在java里面，就是ArrayList了。
 
@@ -21,7 +21,7 @@
 
 这种功能，叫做LIFO：last in first out。我们在美国都见过餐馆弹出盘子的机器，新盘子放在上面，客人来了，先把最上面的盘子拿走，然后再拿它下面的。因为第一个弹出来的，是最后一个进去的，所以叫做LIFO。我们浏览网页，要访问上一个网页，就要把上一个放进去的网页地址拿出来，所以也是LIFO的功能。【图】
 
-![](http://cs.lmu.edu/~ray/images/stack.gif)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/stack.gif)
 
 一种叫做“栈”（Stack）的数据结构，就很好地实现了这个功能。不仅复杂度都是O(1)，而且“放入”和“弹出”这两个核心操作，非常方便。
 
@@ -62,25 +62,25 @@ Vector就是一种线程安全的动态数组（Java中就是线程安全的Arra
 	    addElement(item);
 	    return item;
 	}
-	
+
 	public synchronized E pop() {
 	    E obj;
 	    int len = size();
-	
+
 	    obj = peek();
 	    removeElementAt(len - 1);
-	
+
 	    return obj;
 	}
-	
+
 	public synchronized E peek() {
 	    int len = size();
-	
+
 	    if (len == 0)
 	        throw new EmptyStackException();
 	    return elementAt(len - 1);
 	}
-	
+
 	public boolean isEmpty() {
 	    return size() == 0;
 	}
@@ -102,26 +102,26 @@ Cache not friendly
 			public void push(AnyType e) {
 				if(top == array.length-1)
 					throw new StackException("Stack is full");
-				array[++top] = e;	
+				array[++top] = e;
 			}
-			
+
 			@Override
 			public AnyType pop() {
-				if(isEmpty()) 
+				if(isEmpty())
 					return null;
-				
+
 				AnyType e = array[top];
 				array[top] = null;
 				top--;
 		 		return e;
 			}
-			
+
 			public AnyType peek() {
-				if(isEmpty()) 
+				if(isEmpty())
 					throw new StackException("Stack is full");
 				return array[top];
 			}
-			
+
 			@Override
 			public boolean isEmpty() {
 				return top == -1;

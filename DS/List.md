@@ -1,4 +1,4 @@
-{{TOC}}
+
 #List
 ##Collection and List Interface
 ###问题
@@ -55,26 +55,26 @@
 				arrl.add(i);
 			}
 			arrl.add(10);
-	
-	
+
+
 			for (int i = 0; i <= 10; ++i) {
 				System.out.print(arrl.get(i) + " ");
-			}	
-			
-			System.out.println("");	
+			}
+
+			System.out.println("");
 		}
 	}
 
 输出如下：
 	$ java Solution
-	0 1 2 3 4 5 6 7 8 9 10 
+	0 1 2 3 4 5 6 7 8 9 10
 这样，我们灵活调整数据结构长度的目标，就达到了。
 为了更好地介绍两种List，我们首先来了解一下Collection这个概念，java的Collection系统，以及List接口。
 
 ###Collection
 “集合类”（Collections）这个概念，是指将其他实例归类的实例。比如，我有三个苹果，两个梨，将三个苹果放入一个袋子，两个梨放入另一个袋子，这两个装有水果的袋子，就形成了两个集合类实例。【集合类和容器的区别？能够用容器来形容集合类吗？】
 在Java中，Collections这个概念，由Collection接口和Collections类来分别表述。Collection接口是一个高级接口，它包含了List，Set和Queue三个子接口。如图：
-![](http://www.programcreek.com/wp-content/uploads/2009/02/java-collection-hierarchy.jpeg)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/list1.jpeg)
 而Collections是一个类，它提供了一系列static方法，能够解决一些集合类的功能需求。比如，Collections.sort(List<T> list)可以将传入的list参数进行排序（该方法的实现使用了优化后的Merge Sort算法）。
 
 实现集合接口的类，需要具备以下几个功能，括号中是对应的方法名：
@@ -121,11 +121,11 @@ ArrayList支持的主要功能复杂度，如下表所示：
 为什么排序需要NLog(N)时间呢？我们后面会讲到排序的各种方法。
 
 常见的方法：
-- add(object) : adds a new element to the end 
-- add(index, object) : inserts a new element at the specified index 
+- add(object) : adds a new element to the end
+- add(index, object) : inserts a new element at the specified index
 - set(index, object) : replaces an existing element at the specified index with the new element.   
-- get(index) : returns the element at the specified index. 
-- remove(index) : deletes the element at the specified index. 
+- get(index) : returns the element at the specified index.
+- remove(index) : deletes the element at the specified index.
 - size() : returns the number of elements.
 - contains
 - iterator
@@ -134,35 +134,35 @@ ArrayList支持的主要功能复杂度，如下表所示：
 [Simplified Implementation](http://www.java2novice.com/java-interview-programs/arraylist-implementation/)
 ArrayList，顾名思义，即用数组array实现的list。我们定义一个数组作为instance variable，该数组储存了list中需要储存的元素，并且根据需求，添加、删除、搜索、遍历元素。
 1. 灵活控制：动态更新数组长度
-	
+
 	那么，ArrayList如何做到灵活地控制数据数量呢？理解这一点，是理解ArrayList实现最关键的部分。
 	ArrayList的实现，是依靠动态更新内部数组的长度，来实现灵活控制长度的。
-	
+
 	对于加长数组的情况，ArrayList类中有这样一个private方法：EnsureCapacity，每当添加操作检测到list的新长度已经超过了内部数组的长度，它就新建一个更大的数组，把旧数组的内容移动进去，新添加的元素也添加到新数组中，然后用新的数组来替代旧的数组作为新的内部数组。Java中，旧的数组会被垃圾回收。
-	
+
 	每个ArrayList实例都有一个容量（Capacity），即用于存储元素的数组的大小。这个容量可随着不断添加新元素而自动增加，但是增长算法并没有定义。当需要插入大量元素时，在插入前可以调用ensureCapacity方法来增加ArrayList的容量以提高插入效率。目前java所用的增长函数是(oldCapacity*3)/2 + 1【后面是否改了？】;
-	
+
 			public boolean add(E e) {
-					ensureCapacity(size+1); // Increments modCount!! 
+					ensureCapacity(size+1); // Increments modCount!!
 					elementData[size++] = e;
 					return true;
 			}
-					
-			public void ensureCapacity(int minCapacity) { 
+
+			public void ensureCapacity(int minCapacity) {
 					modCount++; // 维护线程安全用
-					int oldCapacity = elementData.length; 
+					int oldCapacity = elementData.length;
 					if (minCapacity > oldCapacity) {
 						Object oldData[] = elementData;
-						int newCapacity = (oldCapacity*3)/2 + 1; 
+						int newCapacity = (oldCapacity*3)/2 + 1;
 						if (newCapacity < minCapacity)
 							newCapacity = minCapacity;
 						elementData = Arrays.copyOf(elementData, newCapacity);
 					}
 			}
 	*modCount后面会提及
-	
+
 	*那么，如果删除了元素，使得实际需求的数组长度缩短了呢？【【trimToSize，要讲吗】】
-	
+
 2. 插入和删除（Insert/Remove）
 	- 有了动态更新方法，添加和删除操作的实现就很直观了。
 
@@ -228,17 +228,17 @@ add（也就是append）是一种特殊的插入，也就是插入最后一个�
 
 常见方法：
 - O(1)
-		addFirst(element: Object) : void 
-		addLast(element: Object) : void 
+		addFirst(element: Object) : void
+		addLast(element: Object) : void
 		getFirst() : Object
-		getLast() : Object 
-		removeFirst() : Object 
+		getLast() : Object
+		removeFirst() : Object
 		removeLast() : Object
 - O(N)
 		insertAfter(AnyType key, AnyType toInsert) : void
 		insertBefore(AnyType key, AnyType toInsert) (triky) : void
 		iterator() : Iterator<AnyType>
-		
+
 	insertAfter/insertBefore，就是搜索到一个元素，然后在它前面或后面添加一个元素。添加的部分复杂度为O(1)，搜索的部分复杂度为O(N)。
 
 	在java中LinkedList Class并不能在iterator方法以外直接访问next/prev/data等instance variable，它是被封装的。但是，LeetCode中经常会有直接使用LinkedList的ivar的题目，此时可以直接访问。所以，熟悉用prev,next,curr来遍历、插入、删除和访问是很有用的。
@@ -252,25 +252,25 @@ add（也就是append）是一种特殊的插入，也就是插入最后一个�
 
 		class OuterClass { ....
 			class NestedClass { ....
-			} 
+			}
 		}
 Node实现：
 		private static class Node<AnyType> {
 			private AnyType data;
 			private Node<AnyType> next;
-	
+
 			public Node(AnyType data, Node<AnyType> next) {
 				this.data = data;
 				this.next = next;
 			}
 		}
-		
+
 2. Methods
 	- Constructor
 	有了内部类，我们就可以利用它来实现LinkedList了。我们只须对每一个实例保存该list的第一个node，也就是head node，就可以实现它的所有方法。
 			public MySinglyLinkedList() {
 				head = null;
-			}	
+			}
 	- addFirst
 	像addFirst这样的方法，实现方式是非常直观的，只要完成“重新链接”的过程就可以了。
 			public void addFirst(AnyType data) {
@@ -283,16 +283,16 @@ Node实现：
 				Node<AnyType> tmp = head;
 				if (head == null)
 					return;
-					
+
 				// Edge case for head containing key, insert a new node before head
 				if (head.data.equals(key)) {
 					head = new Node<AnyType>(toInsert, head);
 					return;
 				}
-				
+
 				while (tmp.next != null && !tmp.next.data.equals(key))
 					tmp = tmp.next;
-				
+
 				if (tmp.next != null) {
 					tmp.next = new Node<AnyType>(toInsert, tmp.next);
 				}
@@ -322,26 +322,26 @@ Node实现：
 				if (head == null || head.next == null) return head;
 				ListNode prev = null, cur = head;
 				ListNode next;
-				
+
 				while (cur != null) {
 					next = cur.next;
 					cur.next = prev;
 					prev = cur;
 					cur = next;
 				}
-				
+
 				return prev;
 			}
-			
+
 			// Recursive
 			public ListNode reverseList(ListNode head) {
 				if (head == null || head.next == null) return head;
 				ListNode second = head.next;
 				head.next = null;
-				
+
 				ListNode rest = reverseList(second);
 				second.next = head;
-				
+
 				return rest;
 			}
 
@@ -366,7 +366,7 @@ Returns a synchronized (thread-safe) list backed by the specified list. In order
 	- Vector proves to be very useful if you don't know the size of the array in advance or you just need one that can change sizes over the lifetime of a program.
 	- //不讲了 Fail fast
 	Vector is fail fast.If the Vector is structurally modified at any time after the Iterator is created, in any way except through the Iterator’s own remove or add methods, the Iterator will throw a ConcurrentModificationException.
-	
+
 		ArrayList iterator is also fail-fast.
 
 *148LinkedList用merge来sort LinkedList

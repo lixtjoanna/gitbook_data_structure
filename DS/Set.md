@@ -2,7 +2,7 @@
 
 [HashSet-TreeSet-LinkedHashSet](http://www.programcreek.com/2013/03/hashset-vs-treeset-vs-linkedhashset/)
 
-![](http://www.programcreek.com/wp-content/uploads/2009/02/java-collection-hierarchy.jpeg)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/set1.jpeg)
 
 
 
@@ -47,8 +47,8 @@ public class HashSet<E> implements Set<E> {
 
     public boolean add(E e) {
         return map.put(e, PRESENT)==null;
-    } 
-} 
+    }
+}
 ```
 ###应用及注意事项
 

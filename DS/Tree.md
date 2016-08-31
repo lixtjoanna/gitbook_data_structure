@@ -25,7 +25,7 @@
 	TreeNode grandfather = xiaoming.parent().parent();
 
 ##定义
-![](http://typeocaml.com/content/images/2014/11/edge-1.jpg#small)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/edge-1.jpg)
 树的定义，和上图的特点，是一致的。
 树，就是一个节点（node）的集合，这些节点用父子关系来储存元素，父子关系满足以下条件：
 1. 如果树非空，则有一个根节点，它没有父节点。
@@ -39,7 +39,7 @@
 - Parent: When any node (except the root) has exactly one edge running upward to another node. The node above is called parent of the node.  
 - Child: Any node may have one or more lines running downward to other nodes. These nodes below the given node called its children.  
 - Edge: connection between one node to another.
-- Leaf: A node that has no children is called a leaf. There can be only one root in a tree but there can be many leaves. 
+- Leaf: A node that has no children is called a leaf. There can be only one root in a tree but there can be many leaves.
 - Levels: the level of a particular node refers to how many generations the node is from the root. The root is level 0 and its children are level 1 and so on.  
 - Height: The height of a tree is the number of edges on the longest downward path between the root and a leaf.
 - Path: a sequence of nodes and edges connecting a node with a descendant.
@@ -50,7 +50,7 @@
 ###问题
 了解了树的定义，让我们来用树解决一个新的问题。
 看到以下的树，我们怎样才能把数字按照从小到大的顺序打印出来？
-![](http://www.tutorialspoint.com/data_structures_algorithms/images/binary_search_tree.jpg)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/binary_search_tree.jpg)
 认真观察这个树，你会发现，只要从左到右把节点中的数打印出来就可以了。
 
 ###定义
@@ -86,9 +86,9 @@
 		这种情况最为复杂，需要找successor，也就是右子树中最小的元素。从要删除的元素往下一路向左，找到最左元素，定为successor，然后做两件事：
 		- successor如果有右树，将其连到其parent的左树上。
 		- successor新的右树，连到被删除元素的右树上。
-	
+
 	花费的时间，除了搜索以外，还有找successor以及固定的relink时间。
-3. Traversal 
+3. Traversal
 	树尤其是二叉树、BST的遍历，是一种极其重要和常见的操作。我们上面所出的题目，之所以能够实现顺序打印子节点，靠的正是一种二叉树遍历的方法：深度优先遍历中的中根遍历。
 	树遍历有两种方法：深度优先遍历和广度优先遍历，其中深度优先遍历又分为先根、后根和中根遍历。
 	下面介绍遍历方法。
@@ -142,7 +142,7 @@
 		}
 	}
 	我们将在下一节中具体介绍这些遍历方法的实现方式。
-	
+
 	================================================
 
 	这些基本操作，对应的java方法如下：【对应的java库是哪个？ 】
@@ -150,9 +150,9 @@
 	- void insert(int key, double value)
 	- void delete(int key)
 	- Iterator iterator()
-	
+
 	下面，我们来看一看这些基本操作的实现。
-	
+
 ###实现
 1. TreeNode嵌套类
 		// private static nested Node class
@@ -160,7 +160,7 @@
 		    int key;
 		    double value;
 		    Node left, right;
-		
+
 		    Node(int key, double value) {
 		        this.key = key;
 		        this.value = value;
@@ -172,7 +172,7 @@
 		    if (root == null)
 		        return false; // tree is empty
 		    Node curr = root;
-		
+
 		    // while not found
 		    while (curr.key != key) {
 		        if (curr.key < key) // go right
@@ -194,13 +194,13 @@
 		    else {
 		        Node parent = root; // keep track of parent
 		        Node curr = root;
-		
+
 		        while (true) {
 		            // no duplicates allowed
 		            if (key == curr.key)
 		                return;
 		            parent = curr;
-		
+
 		            if (key < curr.key) { // go left
 		                curr = curr.left;
 		                if (curr == null) { // found a spot
@@ -223,11 +223,11 @@
 				// the tree is empty
 				if (root == null)
 					return;
-		
+
 				Node curr = root;
 				Node parent = root;
 				boolean isLeftChild = true; // flag to check left child
-		
+
 				while (curr.key != key) {
 					parent = curr;
 					if (key < curr.key) { // go left
@@ -237,11 +237,11 @@
 						isLeftChild = false;
 						curr = curr.right;
 					}
-		
+
 					if (curr == null) // case 1: not found
 						return;
 				}
-		
+
 				if (curr.left == null && curr.right == null) { // case 2: leaf
 					if (curr == root)
 						root = null;
@@ -265,32 +265,32 @@
 						parent.right = curr.right;
 				} else { // case 4: with two children HARDEST!
 					Node successor = getSuccessor(curr);
-		
+
 					if (curr == root)
 						root = successor;
 					else if (isLeftChild)
 						parent.left = successor;
 					else
 						parent.right = successor;
-		
+
 					// need to take care of final connection with curr's left
 					successor.left = curr.left;
 				}
 			}
-	
+
 	getSuccessor():找到某节点下方的下一个节点（如果有的话）。是右子树的最左子树。注意这里说的successor不含上面的，因这种情况下不会有上面是successor的情况。
 			private Node getSuccessor(Node keyNode) {
 				Node successorParent = keyNode;
 				Node successor = keyNode;
 				Node curr = keyNode.right;
-		
+
 				// move to left as far as possible in the right subtree
 				while (curr != null) {
 					successorParent = successor;
 					successor = curr;
 					curr = curr.left;
 				}
-		
+
 				/*
 				 * if successor is not the right child of the node to be deleted Then
 				 * need to take care of two connections in the right subtree
@@ -299,10 +299,10 @@
 					successorParent.left = successor.right; // link the right subtree of successor to its parent on the left
 					successor.right = keyNode.right; // the right tree of the deleted node
 				}
-		
+
 				return successor;
 			}
-			
+
 5. Iterator iterator()		
 	- 方法：非递归的dfs，要保存遍历的位置，这里用栈。
 	- 为什么？实际上就是走迷宫，顺序是指定顺序（一般是中序），那么每次走完左死角，需要能够回来，走右边的那个死角。stack记录了走的路径，回到其top的元素，就是上一个分叉口的记号。
@@ -310,26 +310,26 @@
 			public class BSTIterator {
 			    TreeNode curr;
 			    Stack<TreeNode> stack = new Stack<TreeNode>();
-			    
+
 			    public BSTIterator(TreeNode root) {
 			        curr = root;
 			    }
-			
+
 			    /** @return whether we have a next smallest number */
 			    public boolean hasNext() {
 			        return (curr != null) || (!stack.isEmpty());
 			    }
-			
+
 			    /** @return the next smallest number */
 			    public int next() {
 			        while (curr != null) {
 			            stack.push(curr);
 			            curr = curr.left;
 			        }
-			        
+
 			        TreeNode node = stack.pop();
 			        curr = node.right;
-			        
+
 			        return node.val;
 			    }
 			}
@@ -344,5 +344,3 @@
 
 ##问题
 1. 树和divide and conquer不一样，后者的子问题是每一个都contribute to result的，但树搜索的结果不一定是。
-
-

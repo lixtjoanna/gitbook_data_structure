@@ -1,4 +1,4 @@
-{{TOC}}
+
 #Heap
 ##问题与原理
 一道题：给一串未排序的数，如何实现操作popMax()，每次弹出其中的最大值？26, 32, 45, 10, 29, 8, 11, 9, 73, 15
@@ -10,17 +10,17 @@
 我们今天介绍一个数据结构来解决这个问题：Heap。它是一个二叉树，满足以下性质：
 - It’s complete (Almost). Every level of the tree has the maximum  number of nodes except possibly the last level. It’s filled in reading  from left to right across each row.  
 - The largest data is in the root.  
-- For every node in the max#heap, its children contain smaller key 
+- For every node in the max#heap, its children contain smaller key
 - value.  
 
 我们来看看Heap如何实现插入和删除O(logN)的性质：
-					    73 
-                    /         \ 
-                 32           45 
-               /     \        /    \ 
-            26     11   10    29 
-          /    \ 
-        15     8 
+					    73
+                    /         \
+                 32           45
+               /     \        /    \
+            26     11   10    29
+          /    \
+        15     8
 
 （插入30）
 弹出最大值
@@ -41,12 +41,12 @@ PopTop(Max or Min):O(logN)
 [实现](https://docs.google.com/document/d/1BUiLMZNLt7QrHeuqDnVAmwMKiDXc24TGLCwaZqQley4/edit#)
 Array实现堆可以省掉指针的空间，而且不影响节点之间的连通。
 
-![](https://www.cs.cmu.edu/~adamchik/15-121/lectures/Binary%20Heaps/pix/complete.bmp)
+![](https://bittigerimages.s3.amazonaws.com/gitbookImages/DataStructures/heap1.bmp)
 
-- its left child is located at 2*k index 
-- its right child is located at 2*k+1. index 
+- its left child is located at 2*k index
+- its right child is located at 2*k+1. index
 - its parent is located at k/2 index
-	
+
 	0的位置空出来，是为了配出上面的关系，可以用二进制左右移动来定位，进一步提高了效率。
 
 2. 建堆
