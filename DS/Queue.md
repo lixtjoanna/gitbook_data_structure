@@ -1,4 +1,4 @@
-{{TOC}}
+
 #Queue
 ##问题和原理
 上次我们介绍了如何处理LIFO，也就是Last in First Out的问题。
