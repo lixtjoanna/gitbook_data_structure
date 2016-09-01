@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-    * [Linar](DS/Linear/README.md)
+    * [Linear](DS/Linear/README.md)
         * [Arrays](DS/Array.md)
         * [List](DS/List.md)
         * [Stack](DS/Stack.md)
